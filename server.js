@@ -1,13 +1,16 @@
+// Primero, carga las variables de entorno desde el archivo sql.env
+require('dotenv').config({ path: './sql.env' });
+
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3002; // Utiliza el puerto proporcionado por Clever Cloud o 3002 si se ejecuta localmente
+const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
-app.use(cors()); // Habilita CORS para todos los rutas y orígenes
+app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
 
-// MySQL connection setup
+// Configuración de conexión MySQL utilizando variables de entorno
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -16,27 +19,30 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
-
+// Conectar a MySQL
 db.connect(err => {
     if (err) {
-        return console.error('error connecting: ' + err.message);
+        console.error('Error connecting: ' + err.message);
+        return;
     }
-    console.log('connected to the MySQL server.');
+    console.log('Connected to the MySQL server.');
 });
 
-// Static files
-app.use(express.static('PROJECT'));
+// Archivos estáticos (ajusta según tu estructura de carpetas)
+app.use(express.static('public'));
 
-// API endpoint to get songs
+// Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const sql = `
-        SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
-        FROM AR
-        JOIN TS ON AR.SongID = TS.SongID
-        ORDER BY AR.Views DESC
-    `;
+    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+                 FROM AR
+                 JOIN TS ON AR.SongID = TS.SongID
+                 ORDER BY AR.Views DESC`;
     db.query(sql, (error, results, fields) => {
-        if (error) throw error;
+        if (error) {
+            console.error('Error fetching data: ' + error.message);
+            res.status(500).send('Error fetching data');
+            return;
+        }
         res.json(results);
     });
 });
@@ -44,6 +50,3 @@ app.get('/api/songs', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
-
-require('dotenv').config();
-
