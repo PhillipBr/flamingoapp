@@ -1,19 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/')  // Update this URL with your actual deployed server URL
-        .then(response => response.json())
-        .then(data => {
-            populateTable(data);
-            document.getElementById('searchButton').addEventListener('click', function() {
+fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs')
+    .then(response => response.json())
+    .then(data => {
+        populateTable(data);
+        document.getElementById('searchButton').addEventListener('click', function() {
+            performSearch(data);
+        });
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
                 performSearch(data);
-            });
-            document.getElementById('searchInput').addEventListener('keypress', function(event) {
-                if (event.key === "Enter") {
-                    event.preventDefault();
-                    performSearch(data);
-                }
-            });
-        })
-        .catch(error => console.error('Error fetching data:', error));
+            }
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
 });
 
 function performSearch(mergedData) {
