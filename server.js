@@ -1,21 +1,22 @@
 const express = require('express');
 const mysql = require('mysql');
-const cors = require('cors');  // Import CORS module
+const cors = require('cors');
 
 const app = express();
-const PORT = 3002;
+const PORT = process.env.PORT || 3002; // Utiliza el puerto proporcionado por Clever Cloud o 3002 si se ejecuta localmente
 
-app.use(cors()); // Enable CORS for all routes and origins
+app.use(cors()); // Habilita CORS para todos los rutas y orígenes
 
 // MySQL connection setup
 const db = mysql.createConnection({
-    host: 'bxpbrop8lgso8srbtkbf-mysql.services.clever-cloud.com',
-    user: 'urrofxaztnxfy371',
-    password: 'XTILiwnWgS9aIcCqKk5o',
-    database: 'bxpbrop8lgso8srbtkbf'
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQL_ADDON_USER,
+    password: process.env.MYSQL_ADDON_PASSWORD,
+    database: process.env.MYSQL_ADDON_DB,
+    port: process.env.MYSQL_ADDON_PORT
 });
 
-// Connect to MySQL
+
 db.connect(err => {
     if (err) {
         return console.error('error connecting: ' + err.message);
