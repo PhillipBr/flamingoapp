@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://your-clever-cloud-app-url/api/songs')  // Update this URL with your actual deployed server URL
+    fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/')  // Update this URL with your actual deployed server URL
         .then(response => response.json())
         .then(data => {
             populateTable(data);
