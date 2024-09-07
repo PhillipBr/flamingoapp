@@ -1,19 +1,22 @@
-fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs')
-    .then(response => response.json())
-    .then(data => {
-        populateTable(data);
-        document.getElementById('searchButton').addEventListener('click', function() {
-            performSearch(data);
-        });
-        document.getElementById('searchInput').addEventListener('keypress', function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('http://localhost:3002/api/songs')
+        .then(response => response.json())
+        .then(data => {
+            populateTable(data);
+            document.getElementById('searchButton').addEventListener('click', function() {
                 performSearch(data);
-            }
-        });
-    })
-    .catch(error => console.error('Error fetching data:', error));
+            });
+            document.getElementById('searchInput').addEventListener('keypress', function(event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    performSearch(data);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
 });
+
+
 
 function performSearch(mergedData) {
     const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -36,6 +39,8 @@ function performSearch(mergedData) {
         populateTable(mergedData);
     }
 }
+
+
 
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
