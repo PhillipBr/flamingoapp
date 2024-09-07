@@ -19,6 +19,7 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
+
 // Conectar a MySQL
 db.connect(err => {
     if (err) {
