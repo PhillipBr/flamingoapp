@@ -1,48 +1,45 @@
 const express = require('express');
 const mysql = require('mysql');
-const cors = require('cors');
+const cors = require('cors');  // Import CORS module
 
 const app = express();
-const PORT = process.env.PORT || 3002; // Use the PORT environment variable provided by Clever Cloud or default to 3002
+const PORT = 3002;
 
-// Enable CORS for all routes and origins
-app.use(cors());
+app.use(cors()); // Enable CORS for all routes and origins
 
-// Set up database connection using environment variables
+// MySQL connection setup
 const db = mysql.createConnection({
-    host: process.env.MYSQL_ADDON_HOST,
-    user: process.env.MYSQL_ADDON_USER,
-    password: process.env.MYSQL_ADDON_PASSWORD,
-    database: process.env.MYSQL_ADDON_DB,
-    port: process.env.MYSQL_ADDON_PORT
+    host: 'bxpbrop8lgso8srbtkbf-mysql.services.clever-cloud.com',
+    user: 'urrofxaztnxfy371',
+    password: 'XTILiwnWgS9aIcCqKk5o',
+    database: 'bxpbrop8lgso8srbtkbf'
 });
 
 // Connect to MySQL
 db.connect(err => {
     if (err) {
-        console.error('Error connecting to the database:', err);
-        return;
+        return console.error('error connecting: ' + err.message);
     }
-    console.log('Connected to the database.');
+    console.log('connected to the MySQL server.');
 });
 
-// Define a route to fetch songs
+// Static files
+app.use(express.static('PROJECT'));
+
+// API endpoint to get songs
 app.get('/api/songs', (req, res) => {
-    const query = 'SELECT * FROM songs ORDER BY popularity DESC LIMIT 5'; // Adjust the table name and fields according to your schema
-    db.query(query, (error, results) => {
-        if (error) {
-            console.error('Failed to retrieve songs from database:', error);
-            res.status(500).send('Error fetching songs');
-        } else {
-            res.json(results);
-        }
+    const sql = `
+        SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+        FROM AR
+        JOIN TS ON AR.SongID = TS.SongID
+        ORDER BY AR.Views DESC
+    `;
+    db.query(sql, (error, results, fields) => {
+        if (error) throw error;
+        res.json(results);
     });
 });
 
-// Serve static files - Optional: If you have a frontend or static files to serve
-app.use(express.static('public'));
-
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
