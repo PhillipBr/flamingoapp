@@ -1,24 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    Promise.all([
-        fetch('DATABASES/Song_Index_1.json').then(response => response.json()),
-        fetch('DATABASES/Tracks_Songs_1.json').then(response => response.json())
-    ])
-        .then(([siData, tsData]) => {
-            const mergedData = siData.map(siItem => {
-                const tsItem = tsData.find(ts => ts.SongID === siItem.SongID) || {};
-                return {...siItem, ...tsItem};
-            });
-
-            populateTable(mergedData);
-
+    fetch('https://your-clever-cloud-app-url/api/songs')  // Update this URL with your actual deployed server URL
+        .then(response => response.json())
+        .then(data => {
+            populateTable(data);
             document.getElementById('searchButton').addEventListener('click', function() {
-                performSearch(mergedData);
+                performSearch(data);
             });
-
             document.getElementById('searchInput').addEventListener('keypress', function(event) {
                 if (event.key === "Enter") {
                     event.preventDefault();
-                    performSearch(mergedData);
+                    performSearch(data);
                 }
             });
         })
@@ -46,8 +37,6 @@ function performSearch(mergedData) {
         populateTable(mergedData);
     }
 }
-
-
 
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
@@ -83,8 +72,10 @@ function updateTopSection(song) {
 }
 
 function updateYouTubeLink(title, artist) {
-    const query = `${title} ${artist} Official Audio`;
-    const apiKey = 'api_key';
+    // Extract the first artist before any comma
+    const firstArtist = artist.split(',')[0].trim();
+    const query = `${title} ${firstArtist}`;
+    const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8';
     const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`;
 
     fetch(apiUrl)
