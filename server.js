@@ -1,19 +1,16 @@
-require('dotenv').config({ path: './sql.env' });
-
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const path = require('path');
+require('dotenv').config({ path: './sql.env' });
+
 const app = express();
 const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
+// Habilita CORS para todas las rutas y orígenes
+app.use(cors());
 
-
-app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
-// Servir archivos estáticos desde la carpeta 'public'
-
-
-
-// Configuración de conexión MySQL utilizando variables de entorno
+// Configuración de la conexión a MySQL utilizando variables de entorno
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -22,17 +19,19 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
-// Conectar a MySQL
+// Intento de conexión a la base de datos MySQL
 db.connect(err => {
     if (err) {
-        console.error('Error connecting: ' + err.message);
+        console.error('Error connecting to MySQL: ' + err.message);
         return;
     }
     console.log('Connected to the MySQL server.');
 });
 
-// Archivos estáticos (ajusta según tu estructura de carpetas)
-app.use(express.static('public'));
+// Servir archivos estáticos
+// Ajusta la ruta si es necesario para apuntar correctamente a tus carpetas de recursos estáticos
+app.use('/css', express.static(path.join(__dirname, 'CSS')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Ruta raíz que redirige a /api/songs
 app.get('/', (req, res) => {
@@ -55,6 +54,7 @@ app.get('/api/songs', (req, res) => {
     });
 });
 
+// Inicia el servidor
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
