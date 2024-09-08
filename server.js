@@ -1,6 +1,13 @@
 // Primero, carga las variables de entorno desde el archivo sql.env
 require('dotenv').config({ path: './sql.env' });
 
+// Verificar las variables de entorno inmediatamente después de cargarlas
+console.log('Database host:', process.env.MYSQL_ADDON_HOST);
+console.log('Database user:', process.env.MYSQL_ADDON_USER);
+console.log('Database port:', process.env.MYSQL_ADDON_PORT);
+console.log('Database name:', process.env.MYSQL_ADDON_DB);
+console.log('Database password:', process.env.MYSQL_ADDON_PASSWORD ? '*****' : 'NOT SET'); // Evitar imprimir la contraseña
+
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -18,7 +25,6 @@ const db = mysql.createConnection({
     database: process.env.MYSQL_ADDON_DB,
     port: process.env.MYSQL_ADDON_PORT
 });
-
 
 // Conectar a MySQL
 db.connect(err => {
