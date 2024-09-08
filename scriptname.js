@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost:3002/api/songs')
+    fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/')
         .then(response => response.json())
         .then(data => {
             populateTable(data);
