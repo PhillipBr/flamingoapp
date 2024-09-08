@@ -4,8 +4,7 @@
   "description": "A Node.js application for FlamingoApp",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "install": "npm install"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,7 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.0"  
+    "dotenv": "^16.0.0"
   },
   "engines": {
     "node": "14.x"
