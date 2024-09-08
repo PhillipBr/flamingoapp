@@ -8,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
 app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
+// Servir archivos estáticos desde la carpeta 'public'
+app.use(express.static('public')); // <--- Asegúrate de que esto está antes de tus rutas API
+
 
 // Configuración de conexión MySQL utilizando variables de entorno
 const db = mysql.createConnection({
