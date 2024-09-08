@@ -1,12 +1,4 @@
-// Primero, carga las variables de entorno desde el archivo sql.env
 require('dotenv').config({ path: './sql.env' });
-
-// Verificar las variables de entorno inmediatamente después de cargarlas
-console.log('Database host:', process.env.MYSQL_ADDON_HOST);
-console.log('Database user:', process.env.MYSQL_ADDON_USER);
-console.log('Database port:', process.env.MYSQL_ADDON_PORT);
-console.log('Database name:', process.env.MYSQL_ADDON_DB);
-console.log('Database password:', process.env.MYSQL_ADDON_PASSWORD ? '*****' : 'NOT SET'); // Evitar imprimir la contraseña
 
 const express = require('express');
 const mysql = require('mysql');
@@ -37,6 +29,11 @@ db.connect(err => {
 
 // Archivos estáticos (ajusta según tu estructura de carpetas)
 app.use(express.static('public'));
+
+// Ruta raíz que redirige a /api/songs
+app.get('/', (req, res) => {
+    res.redirect('/api/songs');
+});
 
 // Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
