@@ -1,11 +1,13 @@
+// Importación de módulos necesarios
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 const path = require('path');
 require('dotenv').config({ path: './sql.env' });
 
+// Creación de la aplicación Express
 const app = express();
-const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
+const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o un valor predeterminado
 
 // Habilita CORS para todas las rutas y orígenes
 app.use(cors());
@@ -28,8 +30,7 @@ db.connect(err => {
     console.log('Connected to the MySQL server.');
 });
 
-// Servir archivos estáticos
-// Ajusta la ruta si es necesario para apuntar correctamente a tus carpetas de recursos estáticos
+// Servir archivos estáticos directamente desde las carpetas específicas
 app.use('/css', express.static(path.join(__dirname, 'CSS')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
@@ -54,7 +55,7 @@ app.get('/api/songs', (req, res) => {
     });
 });
 
-// Inicia el servidor
+// Inicia el servidor en el puerto especificado
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
