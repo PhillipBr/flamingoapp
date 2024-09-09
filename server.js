@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 
 // Endpoint API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Population, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
                  FROM AR
                  JOIN TS ON AR.SongID = TS.SongID
                  ORDER BY AR.Views DESC`;
