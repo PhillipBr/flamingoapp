@@ -5,11 +5,12 @@ const path = require('path');
 require('dotenv').config({ path: './sql.env' });
 
 const app = express();
-const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
+const PORT = process.env.PORT || 3002;
 
-// Habilita CORS para todas las rutas y orígenes
 app.use(cors());
-// Configuración de la conexión a MySQL utilizando variables de entorno
+app.use('/css', express.static(path.join(__dirname, 'CSS')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -17,25 +18,19 @@ const db = mysql.createConnection({
     database: process.env.MYSQL_ADDON_DB,
     port: process.env.MYSQL_ADDON_PORT
 });
-// Intento de conexión a la base de datos MySQL
+
 db.connect(err => {
     if (err) {
         console.error('Error connecting to MySQL: ' + err.message);
-        return;
+        process.exit(1); // Exit in case of DB connection error
     }
     console.log('Connected to the MySQL server.');
 });
 
-// Servir archivos estáticos
-// Ajusta la ruta si es necesario para apuntar correctamente a tus carpetas de recursos estáticos
-app.use('/css', express.static(path.join(__dirname, 'CSS')));
-app.use('/images', express.static(path.join(__dirname, 'images')));
-
-// Ruta raíz que redirige a /api/songs
 app.get('/', (req, res) => {
     res.redirect('/api/songs');
 });
-// Punto final de la API para obtener canciones
+
 app.get('/api/songs', (req, res) => {
     const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
                  FROM AR
@@ -51,7 +46,6 @@ app.get('/api/songs', (req, res) => {
     });
 });
 
-// Inicia el servidor
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
