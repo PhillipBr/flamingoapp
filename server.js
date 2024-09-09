@@ -1,4 +1,3 @@
-// Importación de módulos necesarios
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -41,10 +40,10 @@ app.get('/', (req, res) => {
 
 // Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const sql = SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
-                 FROM AR
-                 JOIN TS ON AR.SongID = TS.SongID
-                 ORDER BY AR.Views DESC;
+    const sql = SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+             FROM AR
+             JOIN TS ON AR.SongID = TS.SongID
+             ORDER BY AR.Views DESC;
     db.query(sql, (error, results, fields) => {
         if (error) {
             console.error('Error fetching data: ' + error.message);
