@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching data:', error));
 });
 
-
-
 function performSearch(mergedData) {
     const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
 
@@ -39,8 +37,6 @@ function performSearch(mergedData) {
         populateTable(mergedData);
     }
 }
-
-
 
 function formatViews(number) {
     if (number >= 1e9) {
@@ -78,7 +74,6 @@ function populateTable(data) {
     });
 }
 
-
 function updateTopSection(song) {
     document.getElementById('topTitle').textContent = song.Title;
     document.getElementById('topArtist').textContent = song.Artist;
@@ -99,7 +94,7 @@ function updateYouTubeLink(title, artist) {
         .then(data => {
             if (data.items && data.items.length > 0) {
                 const videoId = data.items[0].id.videoId;
-                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                the videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
                 const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
                 if (youtubeLink) {
                     youtubeLink.href = videoUrl;
