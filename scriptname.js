@@ -49,10 +49,9 @@ function updateTopSection(song) {
 function updateYouTubeLink(title, artist) {
     // Extract the first artist before any comma
     const firstArtist = artist.split(',')[0].trim();
-    const query = ${title} ${firstArtist};
+    const query = `${title} ${firstArtist}`;
     const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8';
-    const apiUrl = https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey};
-
+    const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`; // Faltaban los backticks
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
