@@ -52,7 +52,7 @@ function populateTable(data) {
                 </div>
             </td>
             <td>${song.Album || 'Not Available'}</td>
-            <td>${song.Population || 'Not Available'}</td>
+            <td>${song.Popularity || 'Not Available'}</td>
             <td>${song.Duration || 'Not Available'}</td>
             <td>${year}</td>
             <td>${song.Genre || 'Not Available'}</td>
