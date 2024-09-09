@@ -44,7 +44,7 @@ function performSearch(mergedData) {
 
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
-    tableBody.innerHTML = '';
+    tableBody.innerHTML = ''; // Clear existing table data
 
     data.forEach(song => {
         const year = song.ReleaseDate ? song.ReleaseDate.substring(0, 4) : 'Not Available';
@@ -62,7 +62,15 @@ function populateTable(data) {
             <td>${year}</td>
             <td>${song.Genre || 'Not Available'}</td>
         `;
-        row.addEventListener('click', () => updateTopSection(song));
+        // Add click listener to row for selection
+        row.addEventListener('click', () => {
+            const currentlySelected = tableBody.querySelector('.selected');
+            if (currentlySelected) {
+                currentlySelected.classList.remove('selected');
+            }
+            row.classList.add('selected');
+            updateTopSection(song);
+        });
         tableBody.appendChild(row);
     });
 }
