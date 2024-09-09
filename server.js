@@ -1,24 +1,16 @@
+// Primero, carga las variables de entorno desde el archivo sql.env
+require('dotenv').config({ path: './sql.env' });
+
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-const path = require('path');
-require('dotenv').config({ path: './sql.env' });
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
-// Configuración de CORS para permitir solicitudes desde GitHub Pages
-const corsOptions = {
-    origin: 'https://phillipbr.github.io', // Cambia esto por tu dominio específico si es necesario
-    optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
+app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
 
-// Servir archivos estáticos
-app.use('/css', express.static(path.join(__dirname, 'CSS')));
-app.use('/images', express.static(path.join(__dirname, 'images')));
-
-// Configuración de conexión a MySQL
+// Configuración de conexión MySQL utilizando variables de entorno
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -27,22 +19,22 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
+
+// Conectar a MySQL
 db.connect(err => {
     if (err) {
-        console.error('Error connecting to MySQL: ' + err.message);
-        process.exit(1); // Salir en caso de error de conexión a la base de datos
+        console.error('Error connecting: ' + err.message);
+        return;
     }
     console.log('Connected to the MySQL server.');
 });
 
-// Endpoint para servir el HTML principal
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// Archivos estáticos (ajusta según tu estructura de carpetas)
+app.use(express.static('public'));
 
-// Endpoint API para obtener canciones
+// Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Population, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
                  FROM AR
                  JOIN TS ON AR.SongID = TS.SongID
                  ORDER BY AR.Views DESC`;
