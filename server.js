@@ -28,8 +28,9 @@ db.connect(err => {
 });
 
 app.get('/', (req, res) => {
-    res.redirect('/api/songs');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
 
 app.get('/api/songs', (req, res) => {
     const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
