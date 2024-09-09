@@ -6,9 +6,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -25,7 +22,6 @@ body, html {
     align-items: center;
     justify-content: start;
 }
-
 
 .image {
     width: 300px;
@@ -44,7 +40,6 @@ body, html {
     display: block;
 }
 
-
 .text {
     flex-grow: 1;
     display: flex;
@@ -59,7 +54,6 @@ body, html {
     padding: 10px;
     border-radius: 5px;
 }
-
 
 .title, .artists, .album {
     margin: 0;
@@ -92,7 +86,6 @@ body, html {
     border-radius: 50%;
 }
 
-
 .search_bar {
     width: 95%;
     margin: 6px auto;
@@ -104,7 +97,6 @@ body, html {
     padding: 10px;
 }
 
-
 #searchInput {
     flex-grow: 1;
     height: 30px;
@@ -115,10 +107,6 @@ body, html {
     color: #333;
     font-size: 16px;
 }
-
-
-
-
 
 #searchButton:hover {
     background-color: #a3b18a;
@@ -134,7 +122,6 @@ body, html {
     max-height: calc(60% - 12px);
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -142,13 +129,11 @@ table {
     padding: 0;
 }
 
-
 th, td {
     border: 3px solid white;
     padding: 8px;
     margin: 0;
 }
-
 
 th {
     background-color: #588157;
@@ -157,7 +142,6 @@ th {
     top: 0;
     z-index: 2;
     color: white;
-
 }
 
 .title-artist {
@@ -174,7 +158,6 @@ th {
     font-size: 100%;
 }
 
-
 th:nth-child(1) { width: 35%; }
 th:nth-child(2) { width: 20%; }
 th:nth-child(3) { width: 5%; }
@@ -182,3 +165,12 @@ th:nth-child(4) { width: 5%; }
 th:nth-child(5) { width: 5%; }
 th:nth-child(6) { width: 20%; }
 
+.table tbody tr:hover {
+    background-color: #a3b18a !important; /* Ensuring this rule takes priority */
+}
+
+
+.selected {
+    background-color: #344e41; /* Selected row styling */
+    color: white;
+}
