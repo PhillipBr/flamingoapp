@@ -1,14 +1,19 @@
+require('dotenv').config({ path: './sql.env' });
+
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-
 const app = express();
-const PORT = process.env.PORT || 3002; // Use the PORT environment variable provided by Clever Cloud or default to 3002
+const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
-// Enable CORS for all routes and origins
-app.use(cors());
 
-// Set up database connection using environment variables
+
+app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
+// Servir archivos estáticos desde la carpeta 'public'
+
+
+
+// Configuración de conexión MySQL utilizando variables de entorno
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -17,32 +22,39 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
-// Connect to MySQL
+// Conectar a MySQL
 db.connect(err => {
     if (err) {
-        console.error('Error connecting to the database:', err);
+        console.error('Error connecting: ' + err.message);
         return;
     }
-    console.log('Connected to the database.');
+    console.log('Connected to the MySQL server.');
 });
 
-// Define a route to fetch songs
+// Archivos estáticos (ajusta según tu estructura de carpetas)
+app.use(express.static('public'));
+
+// Ruta raíz que redirige a /api/songs
+app.get('/', (req, res) => {
+    res.redirect('/api/songs');
+});
+
+// Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const query = 'SELECT * FROM songs ORDER BY popularity DESC LIMIT 5'; // Adjust the table name and fields according to your schema
-    db.query(query, (error, results) => {
+    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+                 FROM AR
+                 JOIN TS ON AR.SongID = TS.SongID
+                 ORDER BY AR.Views DESC`;
+    db.query(sql, (error, results, fields) => {
         if (error) {
-            console.error('Failed to retrieve songs from database:', error);
-            res.status(500).send('Error fetching songs');
-        } else {
-            res.json(results);
+            console.error('Error fetching data: ' + error.message);
+            res.status(500).send('Error fetching data');
+            return;
         }
+        res.json(results);
     });
 });
 
-// Serve static files - Optional: If you have a frontend or static files to serve
-app.use(express.static('public'));
-
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
