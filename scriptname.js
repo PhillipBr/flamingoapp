@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function performSearch(mergedData) {
     const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
-    const filteredData = mergedData.filter(song => song.Artist && song.Artist.toLowerCase().includes(searchText));
+    const filteredData = mergedData.filter(song => song.Artist.toLowerCase().includes(searchText));
     populateTable(filteredData.length ? filteredData : mergedData);
 }
 
@@ -36,7 +36,6 @@ function populateTable(data) {
         tableBody.appendChild(row);
     });
 }
-
 
 function updateTopSection(song) {
     document.getElementById('topTitle').textContent = song.Title;
