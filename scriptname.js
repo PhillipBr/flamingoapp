@@ -42,12 +42,23 @@ function performSearch(mergedData) {
 
 
 
+function formatViews(number) {
+    if (number >= 1e9) {
+        return (number / 1e9).toFixed(2) + 'B';
+    } else if (number >= 1e6) {
+        return (number / 1e6).toFixed(2) + 'M';
+    } else {
+        return number.toString();
+    }
+}
+
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
-    tableBody.innerHTML = ''; // Clear existing table data
+    tableBody.innerHTML = '';
 
     data.forEach(song => {
         const year = song.ReleaseDate ? song.ReleaseDate.substring(0, 4) : 'Not Available';
+        const viewsFormatted = formatViews(song.Views);  // Use the formatting function
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>
@@ -57,23 +68,16 @@ function populateTable(data) {
                 </div>
             </td>
             <td>${song.Album || 'Not Available'}</td>
-            <td>${song.Popularity || 'Not Available'}</td>
+            <td>${viewsFormatted}</td>
             <td>${song.Duration || 'Not Available'}</td>
             <td>${year}</td>
             <td>${song.Genre || 'Not Available'}</td>
         `;
-        // Add click listener to row for selection
-        row.addEventListener('click', () => {
-            const currentlySelected = tableBody.querySelector('.selected');
-            if (currentlySelected) {
-                currentlySelected.classList.remove('selected');
-            }
-            row.classList.add('selected');
-            updateTopSection(song);
-        });
+        row.addEventListener('click', () => updateTopSection(song));
         tableBody.appendChild(row);
     });
 }
+
 
 function updateTopSection(song) {
     document.getElementById('topTitle').textContent = song.Title;
