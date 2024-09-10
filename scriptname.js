@@ -73,9 +73,9 @@ function populateTable(data) {
 
 function formatViews(number) {
     if (number >= 1e9) { // 1e9 representa mil millones (1,000,000,000)
-        return (number / 1e9).toFixed(2) + 'B';
+        return (number / 1e9).toFixed(2) + ' B';
     } else if (number >= 1e6) { // 1e6 representa un millón (1,000,000)
-        return (number / 1e6).toFixed(1) + 'M';
+        return (number / 1e6).toFixed(1) + ' M';
     } else {
         return number.toString(); // Devuelve el número sin formato si es menor que un millón
     }
