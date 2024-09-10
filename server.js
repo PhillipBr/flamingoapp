@@ -32,12 +32,11 @@ db.connect(err => {
 // Archivos estáticos (ajusta según tu estructura de carpetas)
 app.use(express.static('public'));
 
-// Punto final de la API para obtener canciones
 app.get('/api/songs', (req, res) => {
-    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, TS.Popularity, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
                  FROM AR
                  JOIN TS ON AR.SongID = TS.SongID
-                 ORDER BY AR.Views DESC`;
+                 ORDER BY AR.Views DESC`; // Utilizamos AR.Views aquí
     db.query(sql, (error, results, fields) => {
         if (error) {
             console.error('Error fetching data: ' + error.message);
@@ -47,6 +46,7 @@ app.get('/api/songs', (req, res) => {
         res.json(results);
     });
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
