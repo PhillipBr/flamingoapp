@@ -52,7 +52,7 @@ function populateTable(data) {
                 </div>
             </td>
             <td>${song.Album || 'Not Available'}</td>
-            <td>${song.Views || 'Not Available'}</td>  <!-- Updated from Popularity to Views -->
+            <td>${formatViews(song.Views) || 'Not Available'}</td>  <!-- Llama a formatViews aquí -->
             <td>${song.Duration || 'Not Available'}</td>
             <td>${year}</td>
             <td>${song.Genre || 'Not Available'}</td>
@@ -69,6 +69,7 @@ function populateTable(data) {
         tableBody.appendChild(row);
     });
 }
+
 
 function formatViews(number) {
     if (number >= 1e9) { // 1e9 representa mil millones (1,000,000,000)
