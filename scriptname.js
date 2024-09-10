@@ -37,16 +37,6 @@ function performSearch(mergedData) {
     }
 }
 
-function formatViews(number) {
-    if (number >= 1e9) { // 1e9 representa mil millones (1,000,000,000)
-        return (number / 1e9).toFixed(2) + 'B';
-    } else if (number >= 1e6) { // 1e6 representa un millón (1,000,000)
-        return (number / 1e6).toFixed(1) + 'M';
-    } else {
-        return number.toString(); // Devuelve el número sin formato si es menor que un millón
-    }
-}
-
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
     tableBody.innerHTML = ''; // Clear existing table data
@@ -78,6 +68,16 @@ function populateTable(data) {
         });
         tableBody.appendChild(row);
     });
+}
+
+function formatViews(number) {
+    if (number >= 1e9) { // 1e9 representa mil millones (1,000,000,000)
+        return (number / 1e9).toFixed(2) + 'B';
+    } else if (number >= 1e6) { // 1e6 representa un millón (1,000,000)
+        return (number / 1e6).toFixed(1) + 'M';
+    } else {
+        return number.toString(); // Devuelve el número sin formato si es menor que un millón
+    }
 }
 
 function updateTopSection(song) {
