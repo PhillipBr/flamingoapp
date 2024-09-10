@@ -7,15 +7,19 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "start": "node server.js", // Asegúrate de tener un 'server.js' que sirva tu app construida
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "postinstall": "npm run build" // Añadido para construir automáticamente después de la instalación en Clever Cloud
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "mysql2": "^3.11.0",
+    "express": "^4.17.1", // Dependencia para ejecutar el servidor
+    "mysql2": "^3.11.0", // Utilizado si interactúas con MySQL desde Node.js
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "cors": "^2.8.5" // Si necesitas manejar CORS en tu servidor
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -29,5 +33,8 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "gh-pages": "^4.0.0"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
