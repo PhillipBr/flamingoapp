@@ -52,7 +52,7 @@ function populateTable(data) {
                 </div>
             </td>
             <td>${song.Album || 'Not Available'}</td>
-            <td>${formatViews(song.Views) || 'Not Available'}</td>  <!-- Llama a formatViews aquí -->
+            <td><b>${formatViews(song.Views) || 'Not Available'}</b></td>  <!-- Llama a formatViews aquí -->
             <td>${song.Duration || 'Not Available'}</td>
             <td>${year}</td>
             <td>${song.Genre || 'Not Available'}</td>
