@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://PhillipBr.github.io/flamingoapp",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.cjs",
     "dev": "vite",
     "build": "vite build",
     "postinstall": "npm run build",
