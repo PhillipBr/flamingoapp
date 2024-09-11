@@ -5,9 +5,10 @@
   "type": "module",
   "homepage": "https://PhillipBr.github.io/flamingoapp",
   "scripts": {
-    "start": "vite preview", 
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
+    "postinstall": "npm run build"
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "deploy": "npm run build && gh-pages -d dist",
     "postinstall": "npm run build",
