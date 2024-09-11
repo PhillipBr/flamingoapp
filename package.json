@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://PhillipBr.github.io/flamingoapp",
   "scripts": {
-    "start": "vite preview",  // Mantén solo una definición de "start"
+    "start": "vite preview", 
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
