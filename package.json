@@ -5,14 +5,13 @@
   "type": "module",
   "homepage": "https://PhillipBr.github.io/flamingoapp",
   "scripts": {
-    "start": "node server.js",  
-    "dev": "vite", 
+    "start": "vite preview",  // Mantén solo una definición de "start"
+    "dev": "vite",
     "build": "vite build",
-    "start": "vite preview", 
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "deploy": "npm run build && gh-pages -d dist", 
-    "postinstall": "npm run build" 
-    "test": "jest" 
+    "deploy": "npm run build && gh-pages -d dist",
+    "postinstall": "npm run build",
+    "test": "jest"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -36,4 +35,6 @@
     "gh-pages": "^4.0.0"
   },
   "engines": {
-    "node":
+    "node": ">=14"
+  }
+}
