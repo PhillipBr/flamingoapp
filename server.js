@@ -36,8 +36,8 @@ app.get('/api/songs', (req, res) => {
     const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
                  FROM AR
                  JOIN TS ON AR.SongID = TS.SongID
-                 ORDER BY AR.Views DESC`; // Utilizamos AR.Views aquí
-    db.query(sql, (error, results, fields) => {
+                 ORDER BY AR.Views DESC`;
+    db.query(sql, (error, results, fields) => { // Asegúrate de que 'error' esté definido correctamente aquí
         if (error) {
             console.error('Error fetching data: ' + error.message);
             res.status(500).send('Error fetching data');
