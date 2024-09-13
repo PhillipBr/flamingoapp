@@ -88,29 +88,52 @@ body, html {
 
 .search_bar {
     width: 95%;
-    margin: 6px auto;
-    height: 50px;
-    background-color: #588157;
+    margin: 20px auto;
+    background-color: #588157; /* Dark green background */
     border: 3px solid #344e41;
     display: flex;
     align-items: center;
     padding: 10px;
+    justify-content: space-between; /* Ensures components are spaced out evenly */
 }
 
-#searchInput {
-    flex-grow: 1;
-    height: 30px;
-    margin-right: 10px;
-    padding: 5px;
-    border: 2px solid #344e41;
-    background-color: #FFF;
+.search-select {
+    width: 15%; /* 20% of the search bar's width */
+    height: 36px;
+    padding: 0 10px;
+    margin-right: 2%; /* Small margin for spacing, adjust as needed */
+    border: 2px solid #FFFFFF;
+    background-color: #98C1A6; /* Paler green background */
     color: #333;
     font-size: 16px;
 }
 
-#searchButton:hover {
-    background-color: #a3b18a;
+.search-input {
+    width: 65%; /* 60% of the search bar's width */
+    height: 36px;
+    padding: 0 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #98C1A6; /* Paler green background */
+    color: #333;
+    font-size: 16px;
 }
+
+#searchButton {
+    width: 20%; /* 20% of the search bar's width */
+    height: 40px;
+    padding: 5px 10px;
+    margin-left: 2%; /* Small margin for spacing, adjust as needed */
+    border: 2px solid #FFFFFF;
+    background-color: #344e41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchButton:hover {
+    background-color: #A3B18A; /* Lighter green on hover */
+}
+
 
 .table {
     width: 95%;
@@ -142,6 +165,11 @@ th {
     top: 0;
     z-index: 2;
     color: white;
+    cursor: pointer;
+}
+
+.active-header {
+    background-color: #344e41;
 }
 
 .title-artist {
@@ -158,15 +186,16 @@ th {
     font-size: 100%;
 }
 
-th:nth-child(1) { width: 35%; }
-th:nth-child(2) { width: 20%; }
-th:nth-child(3) { width: 5%; }
-th:nth-child(4) { width: 5%; }
-th:nth-child(5) { width: 5%; }
-th:nth-child(6) { width: 20%; }
+th:nth-child(1), td:nth-child(1) { width: 3%; } /* # */
+th:nth-child(2), td:nth-child(2) { width: 20%; }/* Title*/
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* Album */
+th:nth-child(4), td:nth-child(4) { width: 6%; } /* Views */
+th:nth-child(5), td:nth-child(5) { width: 4%; } /*Duration*/
+th:nth-child(6), td:nth-child(6) { width: 4%; }/*Release */
+th:nth-child(7), td:nth-child(7) { width: 15%; } /* Genre */
 
 .table tbody tr:hover {
-    background-color: #a3b18a !important; /* Ensuring this rule takes priority */
+    background-color: #a3b18a !important;
 }
 
 
