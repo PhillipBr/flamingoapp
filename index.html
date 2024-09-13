@@ -28,37 +28,45 @@
                   </a>
                   -->
 
-                  <a href="https://www.youtube.com" target="_blank">
-                      <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube">
-                  </a>
-              </div>
-          </div>
-      </div>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     <div class="search_bar">
-        <input type="text" id="searchInput" placeholder="Search by Artist...">
+        <select id="searchCategory" class="search-select">
+            <option value="Title">Title</option>
+            <option value="Artist">Artist</option>
+            <option value="Album">Album</option>
+            <option value="Genre">Genre</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Enter search text..." class="search-input">
         <button id="searchButton">Search</button>
     </div>
 
-      <div class="table">
-          <table>
-              <thead>
-              <tr>
-                  <th>Title</th>
-                  <th>Album</th>
-                  <th>Views</th>
-                  <th>Duration</th>
-                  <th>Release Year</th>
-                  <th>Genre</th>
-              </tr>
-              </thead>
-              <tbody>
-              <!-- Data by scriptname.js -->
-              </tbody>
-          </table>
 
-      </div>
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>#</th> <!-- New column for enumeration -->
+                <th>Title</th>
+                <th>Album</th>
+                <th>Views</th>
+                <th>Duration</th>
+                <th>Release Year</th>
+                <th>Genre</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be inserted here by scriptname.js -->
+            </tbody>
+        </table>
+    </div>
+
 
 
 
