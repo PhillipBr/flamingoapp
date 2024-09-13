@@ -1,3 +1,4 @@
+// Primero, carga las variables de entorno desde el archivo sql.env
 require('dotenv').config({ path: './sql.env' });
 
 const express = require('express');
@@ -5,57 +6,69 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
 
-app.use(cors());
+app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
 
-var connection;
 
-function handleDisconnect() {
-    connection = mysql.createConnection({ 
-        host: process.env.MYSQL_ADDON_HOST,
-        user: process.env.MYSQL_ADDON_USER,
-        password: process.env.MYSQL_ADDON_PASSWORD,
-        database: process.env.MYSQL_ADDON_DB,
-        port: process.env.MYSQL_ADDON_PORT
-    });
+const db = mysql.createConnection({
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQL_ADDON_USER,
+    password: process.env.MYSQL_ADDON_PASSWORD,
+    database: process.env.MYSQL_ADDON_DB,
+    port: process.env.MYSQL_ADDON_PORT
+});
 
-    connection.connect(err => {
-        if (err) {
-            console.error('Error connecting to MySQL:', err);
-            setTimeout(handleDisconnect, 2000); 
-        }
-        console.log('Connected to MySQL server.');
-    });
 
-    connection.on('error', err => {
-        console.error('MySQL error:', err);
-        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
-            handleDisconnect(); 
-        } else {
-            throw err;
-        }
-    });
-}
-
-handleDisconnect(); 
+// Conectar a MySQL
+db.connect(err => {
+    if (err) {
+        console.error('Error connecting: ' + err.message);
+        return;
+    }
+    console.log('Connected to the MySQL server.');
+});
 
 app.use(express.static('public'));
 
 app.get('/api/songs', (req, res) => {
-    const sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
-                 FROM AR
-                 JOIN TS ON AR.SongID = TS.SongID
-                 ORDER BY AR.Views DESC`;
-    connection.query(sql, (error, results, fields) => {
+    let { title, artist, album, genre } = req.query;
+    let conditions = [];
+    let sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+               FROM AR
+               JOIN TS ON AR.SongID = TS.SongID`;
+
+    if (artist) {
+        conditions.push(`AR.Artist LIKE '%${artist}%'`);
+    }
+    if (title) {
+        conditions.push(`AR.Title LIKE '%${title}%'`);
+    }
+    if (album) {
+        conditions.push(`TS.Album LIKE '%${album}%'`);
+    }
+    if (genre) {
+        conditions.push(`TS.Genre LIKE '%${genre}%'`);
+    }
+
+    if (conditions.length > 0) {
+        sql += ' WHERE ' + conditions.join(' AND ');
+    }
+
+    sql += ' ORDER BY AR.Views DESC';
+
+    db.query(sql, (error, results, fields) => {
         if (error) {
-            console.error('Error fetching data:', error.message);
+            console.error('Error fetching data: ' + error.message);
             res.status(500).send('Error fetching data');
             return;
         }
         res.json(results);
     });
 });
+
+
+
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
