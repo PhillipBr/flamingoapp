@@ -39,7 +39,7 @@ function performSearch() {
     const searchText = document.getElementById('searchInput').value.trim();
     const queryParams = new URLSearchParams({ [category]: searchText });
 
-    fetch(`http://localhost:3002/api/songs?${queryParams.toString()}`)
+    fetch(`https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs?${queryParams.toString()}`)
         .then(response => response.json())
         .then(data => {
             currentData = data;
