@@ -46,9 +46,9 @@ db.connect(err => {
 app.get('/api/songs', (req, res) => {
     let { title, artist, album, genre } = req.query;
     let conditions = [];
-    let sql = `SELECT AR.SongID, AR.Title, AR.Artist, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
-               FROM AR
-               JOIN TS ON AR.SongID = TS.SongID`;
+    let sql = `SELECT AR.SongID, AR.Title, AR.Artist, AR.youtube_url AS youtube_url, TS.Album, AR.Views, TS.Duration, TS.CoverImage, TS.ReleaseDate, TS.Genre
+           FROM AR
+           JOIN TS ON AR.SongID = TS.SongID`;
 
     // Prepare conditions and parameterized query values
     let values = [];
