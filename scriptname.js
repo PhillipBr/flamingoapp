@@ -149,32 +149,21 @@ function formatViews(number) {
 }
 
 function updateTopSection(song) {
+    console.log(song);
     document.getElementById('topTitle').textContent = song.Title;
     document.getElementById('topArtist').textContent = song.Artist;
     document.getElementById('topAlbum').textContent = song.Album;
     document.getElementById('topImage').src = song.CoverImage;
-    updateYouTubeLink(song.Title, song.Artist);
+    updateYouTubeLink(song.youtube_url);
 }
 
-function updateYouTubeLink(title, artist) {
-    const firstArtist = artist.split(',')[0].trim();
-    const query = `${title} ${firstArtist}`;
-    const apiKey = 'YOUR_YOUTUBE_API_KEY'; // Replace with your YouTube Data API key
-    const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`;
-
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            if (data.items && data.items.length > 0) {
-                const videoId = data.items[0].id.videoId;
-                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-                const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
-                if (youtubeLink) {
-                    youtubeLink.href = videoUrl;
-                }
-            } else {
-                console.log("No results found.");
-            }
-        })
-        .catch(error => console.error('Error fetching YouTube data:', error));
+function updateYouTubeLink(youtube_url) {
+    const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
+    if (youtubeLink) {
+        if (youtube_url) {
+            youtubeLink.href = youtube_url;
+        } else {
+            youtubeLink.href = "https://www.youtube.com"; 
+        }
+    }
 }
