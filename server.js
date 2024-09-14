@@ -1,16 +1,30 @@
-// Primero, carga las variables de entorno desde el archivo sql.env
+// Load environment variables from sql.env
 require('dotenv').config({ path: './sql.env' });
 
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3002; // Usa el puerto proporcionado por el entorno o 3002 si no está definido.
+const PORT = process.env.PORT || 3002; // Use the provided port or default to 3002.
 
-app.use(cors()); // Habilita CORS para todas las rutas y orígenes.
+// Configure CORS to allow requests from your GitHub Pages domain
+app.use(cors({
+    origin: 'https://phillipbr.github.io', // Replace with your actual GitHub Pages URL if different
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
 
+// Serve static files from the root directory
+app.use(express.static(__dirname));
 
+// Serve 'index.html' at the root path
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Database connection
 const db = mysql.createConnection({
     host: process.env.MYSQL_ADDON_HOST,
     user: process.env.MYSQL_ADDON_USER,
@@ -19,8 +33,7 @@ const db = mysql.createConnection({
     port: process.env.MYSQL_ADDON_PORT
 });
 
-
-// Conectar a MySQL
+// Connect to MySQL
 db.connect(err => {
     if (err) {
         console.error('Error connecting: ' + err.message);
@@ -29,8 +42,7 @@ db.connect(err => {
     console.log('Connected to the MySQL server.');
 });
 
-app.use(express.static('public'));
-
+// API endpoint
 app.get('/api/songs', (req, res) => {
     let { title, artist, album, genre } = req.query;
     let conditions = [];
@@ -38,17 +50,23 @@ app.get('/api/songs', (req, res) => {
                FROM AR
                JOIN TS ON AR.SongID = TS.SongID`;
 
+    // Prepare conditions and parameterized query values
+    let values = [];
     if (artist) {
-        conditions.push(`AR.Artist LIKE '%${artist}%'`);
+        conditions.push(`AR.Artist LIKE ?`);
+        values.push(`%${artist}%`);
     }
     if (title) {
-        conditions.push(`AR.Title LIKE '%${title}%'`);
+        conditions.push(`AR.Title LIKE ?`);
+        values.push(`%${title}%`);
     }
     if (album) {
-        conditions.push(`TS.Album LIKE '%${album}%'`);
+        conditions.push(`TS.Album LIKE ?`);
+        values.push(`%${album}%`);
     }
     if (genre) {
-        conditions.push(`TS.Genre LIKE '%${genre}%'`);
+        conditions.push(`TS.Genre LIKE ?`);
+        values.push(`%${genre}%`);
     }
 
     if (conditions.length > 0) {
@@ -57,7 +75,7 @@ app.get('/api/songs', (req, res) => {
 
     sql += ' ORDER BY AR.Views DESC';
 
-    db.query(sql, (error, results, fields) => {
+    db.query(sql, values, (error, results, fields) => {
         if (error) {
             console.error('Error fetching data: ' + error.message);
             res.status(500).send('Error fetching data');
@@ -66,9 +84,6 @@ app.get('/api/songs', (req, res) => {
         res.json(results);
     });
 });
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
