@@ -17,13 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            document.getElementById('homeButton').addEventListener('click', function() {
-                document.getElementById('searchInput').value = '';
-                currentData = [...initialData];
-                populateTable(currentData);
-                resetHeaderStyles(document.querySelectorAll('th'));
-            });
-
             const headers = document.querySelectorAll('th');
             headers.forEach((header, index) => {
                 header.addEventListener('click', () => {
@@ -46,7 +39,7 @@ function performSearch() {
     const searchText = document.getElementById('searchInput').value.trim();
     const queryParams = new URLSearchParams({ [category]: searchText });
 
-    fetch(`https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs?${queryParams.toString()}`)
+    fetch(https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs?${queryParams.toString()})
         .then(response => response.json())
         .then(data => {
             currentData = data;
@@ -62,7 +55,7 @@ function populateTable(data) {
 
     data.forEach((song, index) => {
         const row = document.createElement('tr');
-        row.innerHTML = `
+        row.innerHTML = 
             <td>${index + 1}</td>
             <td>
                 <div class="title-artist">
@@ -75,7 +68,7 @@ function populateTable(data) {
             <td>${song.Duration || 'Not Available'}</td>
             <td>${song.ReleaseDate ? song.ReleaseDate.substring(0, 4) : 'Not Available'}</td>
             <td>${song.Genre || 'Not Available'}</td>
-        `;
+        ;
         row.addEventListener('click', () => {
             const currentlySelected = tableBody.querySelector('.selected');
             if (currentlySelected) {
@@ -153,16 +146,16 @@ function updateTopSection(song) {
 
 function updateYouTubeLink(title, artist) {
     const firstArtist = artist.split(',')[0].trim();
-    const query = `${title} ${firstArtist}`;
+    const query = ${title} ${firstArtist};
     const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8';
-    const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`;
+    const apiUrl = https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey};
 
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             if (data.items && data.items.length > 0) {
                 const videoId = data.items[0].id.videoId;
-                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                const videoUrl = https://www.youtube.com/watch?v=${videoId};
                 const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
                 if (youtubeLink) {
                     youtubeLink.href = videoUrl;
