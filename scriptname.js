@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
+            document.getElementById('homeButton').addEventListener('click', function() {
+                document.getElementById('searchInput').value = '';
+                currentData = [...initialData];
+                populateTable(currentData);
+                resetHeaderStyles(document.querySelectorAll('th'));
+            });
+
             const headers = document.querySelectorAll('th');
             headers.forEach((header, index) => {
                 header.addEventListener('click', () => {
@@ -141,7 +148,7 @@ function updateTopSection(song) {
     document.getElementById('topArtist').textContent = song.Artist;
     document.getElementById('topAlbum').textContent = song.Album;
     document.getElementById('topImage').src = song.CoverImage;
-    updateYouTubeLink(song.Title, song.Artist);
+    updateYouTubeLink(song.Title, song Artist);
 }
 
 function updateYouTubeLink(title, artist) {
