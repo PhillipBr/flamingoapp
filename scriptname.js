@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
+            // Assign the reset functionality to the homeButton
+            document.getElementById('homeButton').addEventListener('click', function() {
+                document.getElementById('searchInput').value = ''; // Clear the search input
+                resetTableToInitialState();
+            });
+
             const headers = document.querySelectorAll('th');
             headers.forEach((header, index) => {
                 header.addEventListener('click', () => {
@@ -47,6 +53,12 @@ function performSearch() {
             resetHeaderStyles(document.querySelectorAll('th'));
         })
         .catch(error => console.error('Error fetching data:', error));
+}
+
+function resetTableToInitialState() {
+    currentData = [...initialData];
+    populateTable(currentData);
+    resetHeaderStyles(document.querySelectorAll('th'));
 }
 
 function populateTable(data) {
@@ -91,7 +103,10 @@ function toggleSortDirection(columnIndex) {
 
 function sortTableByColumn(columnIndex) {
     if (columnIndex === 0) {
-        currentData = [...initialData];
+        document.getElementById('searchInput').value = ''; // Clear the search input
+        currentData = [...initialData]; // Reset the data array to the initial state
+        populateTable(currentData); // Repopulate the table with the reset data
+        resetHeaderStyles(document.querySelectorAll('th')); // Reset the styles of the headers
     } else {
         let sortKey;
         const isNumericSort = [3, 4, 5].includes(columnIndex);
@@ -108,8 +123,8 @@ function sortTableByColumn(columnIndex) {
         } else {
             currentData.sort((a, b) => isNumericSort ? sortNumerically(b, a, sortKey) : a[sortKey].localeCompare(b[sortKey]));
         }
+        populateTable(currentData);
     }
-    populateTable(currentData);
 }
 
 function sortNumerically(a, b, key) {
@@ -147,7 +162,7 @@ function updateTopSection(song) {
 function updateYouTubeLink(title, artist) {
     const firstArtist = artist.split(',')[0].trim();
     const query = `${title} ${firstArtist}`;
-    const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8';
+    const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8'; // Replace with your YouTube Data API key
     const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`;
 
     fetch(apiUrl)
