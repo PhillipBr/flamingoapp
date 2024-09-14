@@ -148,7 +148,7 @@ function updateTopSection(song) {
     document.getElementById('topArtist').textContent = song.Artist;
     document.getElementById('topAlbum').textContent = song.Album;
     document.getElementById('topImage').src = song.CoverImage;
-    updateYouTubeLink(song.Title, song Artist);
+    updateYouTubeLink(song.Title, song.Artist);
 }
 
 function updateYouTubeLink(title, artist) {
