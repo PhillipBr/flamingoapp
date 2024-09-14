@@ -162,7 +162,7 @@ function updateTopSection(song) {
 function updateYouTubeLink(title, artist) {
     const firstArtist = artist.split(',')[0].trim();
     const query = `${title} ${firstArtist}`;
-    const apiKey = 'AIzaSyDrJAA4-3ZlydW1soK8UFz4agqSldRnAy8'; // Replace with your YouTube Data API key
+    const apiKey = 'AIzaSyCY5nN44kEZPSnnvu9h0a7HeCkm-f8Im8w'; // Replace with your YouTube Data API key
     const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`;
 
     fetch(apiUrl)
