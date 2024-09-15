@@ -73,6 +73,16 @@ body, html {
     font-size: 16px;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a,
+.icons button {
+    margin-left: 10px;
+}
+
 .icons img {
     width: 35px;
     height: 35px;
@@ -89,16 +99,16 @@ body, html {
 .search_bar {
     width: 95%;
     margin: 20px auto;
-    background-color: #588157; /* Dark green background */
+    background-color: #588157;
     border: 3px solid #344e41;
     display: flex;
     align-items: center;
     padding: 10px;
-    justify-content: space-between; /* Ensures components are spaced out evenly */
+    justify-content: space-between;
 }
 
 .search-select {
-    width: 15%; /* Adjusted for additional button */
+    width: 15%;
     height: 36px;
     padding: 0 10px;
     margin-right: 2%;
@@ -109,7 +119,7 @@ body, html {
 }
 
 .search-input {
-    width: 55%; /* Adjusted for additional button */
+    width: 55%;
     height: 36px;
     padding: 0 10px;
     border: 2px solid #FFFFFF;
@@ -119,7 +129,7 @@ body, html {
 }
 
 #searchButton, #homeButton {
-    width: 15%; /* Adjusted width */
+    width: 15%;
     height: 40px;
     padding: 5px 10px;
     border: 2px solid #FFFFFF;
@@ -130,7 +140,7 @@ body, html {
 }
 
 #homeButton {
-    background-color: #A3B18A; /* A contrasting lighter green */
+    background-color: #A3B18A;
 }
 
 .button-icon {
@@ -138,11 +148,23 @@ body, html {
     height: 20px;
 }
 
-#searchButton:hover, #homeButton:hover {
-    background-color: #98C1A6; /* Lighter green on hover */
+#selectButton {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #344e41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 
+
+#searchButton:hover, #homeButton:hover {
+    background-color: #98C1A6;
+}
 
 .table {
     width: 95%;
@@ -195,20 +217,19 @@ th {
     font-size: 100%;
 }
 
-th:nth-child(1), td:nth-child(1) { width: 3%; } /* # */
-th:nth-child(2), td:nth-child(2) { width: 20%; }/* Title*/
-th:nth-child(3), td:nth-child(3) { width: 15%; } /* Album */
-th:nth-child(4), td:nth-child(4) { width: 6%; } /* Views */
-th:nth-child(5), td:nth-child(5) { width: 4%; } /*Duration*/
-th:nth-child(6), td:nth-child(6) { width: 4%; }/*Release */
-th:nth-child(7), td:nth-child(7) { width: 15%; } /* Genre */
+th:nth-child(1), td:nth-child(1) { width: 3%; }
+th:nth-child(2), td:nth-child(2) { width: 20%; }
+th:nth-child(3), td:nth-child(3) { width: 15%; }
+th:nth-child(4), td:nth-child(4) { width: 6%; }
+th:nth-child(5), td:nth-child(5) { width: 4%; }
+th:nth-child(6), td:nth-child(6) { width: 4%; }
+th:nth-child(7), td:nth-child(7) { width: 15%; }
 
 .table tbody tr:hover {
     background-color: #a3b18a !important;
 }
 
-
 .selected {
-    background-color: #344e41; /* Selected row styling */
+    background-color: #344e41;
     color: white;
 }
