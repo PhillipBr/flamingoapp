@@ -5,7 +5,7 @@ let selectionMode = false;
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch('https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs')
-        .then(response => response.json())
+.then(response => response.json())
         .then(data => {
             currentData = data;
             initialData = [...data];
@@ -36,32 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.backgroundColor = selectionMode ? '#697096' : '#344e41';
                 this.style.color = 'white';
                 this.style.border = '2px solid #FFFFFF';
-
-                if (!selectionMode) {
-                    // Clear all selections when exiting selection mode
-                    const selectedRows = document.querySelectorAll('.table tbody tr');
-                    selectedRows.forEach(row => {
-                        if (row.isSelected) {
-                            row.style.backgroundColor = '';
-                            row.isSelected = false;
-                        }
-                    });
-                    document.getElementById('selectedCount').textContent = 0; // Reset selected count
-                }
             });
         })
         .catch(error => console.error('Error fetching data:', error));
 });
-
-function resetHeaderStyles(headers) {
-    headers.forEach(h => h.classList.remove('active-header'));
+function resetTableToInitialState() {
+    currentData = [...initialData];
+    populateTable(currentData);
+    resetHeaderStyles(document.querySelectorAll('th'));
 }
 
 function performSearch() {
     const category = document.getElementById('searchCategory').value.toLowerCase();
     const searchText = document.getElementById('searchInput').value.trim();
     const queryParams = new URLSearchParams({ [category]: searchText });
-
     fetch(`https://app-637f919d-127a-4d06-831c-b9ca4ab90e14.cleverapps.io/api/songs?${queryParams.toString()}`)
         .then(response => response.json())
         .then(data => {
@@ -147,13 +135,7 @@ function sortTableByColumn(columnIndex) {
         case 5: sortKey = 'ReleaseDate'; break;
         case 6: sortKey = 'Genre'; break;
     }
-    currentData.sort((a, b) => {
-        if (isNumericSort) {
-            return sortDirection[columnIndex] === 'asc' ? sortNumerically(a, b, sortKey) : sortNumerically(b, a, sortKey);
-        } else {
-            return sortDirection[columnIndex] === 'asc' ? a[sortKey].localeCompare(b[sortKey]) : b[sortKey].localeCompare(a[sortKey]);
-        }
-    });
+    currentData.sort((a, b) => isNumericSort ? sortNumerically(a, b, sortKey) : a[sortKey].localeCompare(b[sortKey]));
     populateTable(currentData);
 }
 
@@ -162,10 +144,8 @@ function sortNumerically(a, b, key) {
         return convertDurationToSeconds(a[key]) - convertDurationToSeconds(b[key]);
     } else if (key === 'ReleaseDate') {
         return parseInt(a[key].substring(0, 4)) - parseInt(b[key].substring(0, 4));
-    } else if (key === 'Views') {
-        return a[key] - b[key];
     }
-    return 0;
+    return a[key] - b[key];
 }
 
 function convertDurationToSeconds(duration) {
@@ -192,8 +172,7 @@ function updateTopSection(song) {
 }
 
 function updateYouTubeLink(youtube_url) {
-    const youtubeLink = document.getElementById('youtubeLink');
-    if (youtubeLink) {
-        youtubeLink.href = youtube_url || "https://www.youtube.com";
-    }
+    const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
+    youtubeLink.href = youtube_url || "https://www.youtube.com";
 }
+
