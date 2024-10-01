@@ -1,10 +1,10 @@
 let currentData = [];
-let sortDirection = {};
 let initialData = [];
+let displayedData = [];
 let selectionMode = false;
+let sortDirection = {};
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load JSON files and merge data
     Promise.all([
         fetch('DATABASES/AR.json').then(response => response.json()),
         fetch('DATABASES/TS.json').then(response => response.json()),
@@ -13,13 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(([arData, tsData, ufData]) => {
             currentData = mergeDataBySongID(arData, tsData, ufData);
             initialData = [...currentData];
-            populateTable(currentData);
+            sortTableByViews(currentData);
+            displayedData = [...currentData];
+            populateTable(displayedData);
             setUpEventListeners();
         })
         .catch(error => console.error('Error loading JSON files:', error));
 });
 
-// Function to merge the three JSON datasets based on SongID
 function mergeDataBySongID(arData, tsData, ufData) {
     return tsData.map(tsEntry => {
         const arEntry = arData.find(ar => ar.SongID === tsEntry.SongID) || {};
@@ -28,7 +29,6 @@ function mergeDataBySongID(arData, tsData, ufData) {
     });
 }
 
-// Setup all event listeners for buttons and search input
 function setUpEventListeners() {
     document.getElementById('searchButton').addEventListener('click', performSearch);
     document.getElementById('searchInput').addEventListener('keypress', function(event) {
@@ -57,55 +57,41 @@ function setUpEventListeners() {
     const headers = document.querySelectorAll('th');
     headers.forEach((header, index) => {
         header.addEventListener('click', () => {
-            resetHeaderStyles(headers);
-            header.classList.add('active-header');
             toggleSortDirection(index);
-            sortTableByColumn(index);
+            sortTableByColumn(index, displayedData);
         });
     });
 }
 
-// Reset table to initial state
 function resetTableToInitialState() {
     currentData = [...initialData];
-    populateTable(currentData);
-    resetHeaderStyles(document.querySelectorAll('th'));
+    sortTableByViews(currentData);
+    displayedData = [...currentData];
+    populateTable(displayedData);
 }
 
-// Search function adapted from MySQL query logic
 function performSearch() {
-    const category = document.getElementById('searchCategory').value.toLowerCase(); // Search category
-    const searchText = document.getElementById('searchInput').value.trim().toLowerCase(); // Search text
+    const category = document.getElementById('searchCategory').value.toLowerCase();
+    const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
 
-    const filteredData = initialData.filter(song => {
-        if (category === 'title' && song.Title.toLowerCase().includes(searchText)) {
-            return true;
-        }
-        if (category === 'artist' && song.Artist.toLowerCase().includes(searchText)) {
-            return true;
-        }
-        if (category === 'album' && song.Album && song.Album.toLowerCase().includes(searchText)) {
-            return true;
-        }
-        if (category === 'genre' && song.Genre && song.Genre.toLowerCase().includes(searchText)) {
-            return true;
-        }
+    displayedData = initialData.filter(song => {
+        if (category === 'title' && song.Title.toLowerCase().includes(searchText)) return true;
+        if (category === 'artist' && song.Artist.toLowerCase().includes(searchText)) return true;
+        if (category === 'album' && song.Album && song.Album.toLowerCase().includes(searchText)) return true;
+        if (category === 'genre' && song.Genre && song.Genre.toLowerCase().includes(searchText)) return true;
         return false;
     });
 
-    populateTable(filteredData);
-    resetHeaderStyles(document.querySelectorAll('th'));
+    sortTableByViews(displayedData);
+    populateTable(displayedData);
 }
 
-// Populate table with song data
 function populateTable(data) {
     const tableBody = document.querySelector('.table tbody');
     tableBody.innerHTML = '';
-
     data.forEach((song, index) => {
         const row = document.createElement('tr');
         row.songData = song;
-
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>
@@ -120,7 +106,6 @@ function populateTable(data) {
             <td>${song.ReleaseDate ? song.ReleaseDate.substring(0, 4) : 'Not Available'}</td>
             <td>${song.Genre || 'Not Available'}</td>
         `;
-
         row.isSelected = false;
         row.addEventListener('click', () => {
             if (selectionMode) {
@@ -130,12 +115,10 @@ function populateTable(data) {
                 updateTopSection(song);
             }
         });
-
         tableBody.appendChild(row);
     });
 }
 
-// Toggle the selection of a row
 function toggleSelection(row) {
     if (row.isSelected) {
         row.style.backgroundColor = '';
@@ -153,7 +136,6 @@ function toggleSelection(row) {
     document.getElementById('selectedCount').textContent = selectedRows.length;
 }
 
-// Select a single row and update the top section
 function selectSingleRow(row, tableBody) {
     const currentlySelected = tableBody.querySelector('.selected');
     if (currentlySelected) {
@@ -162,7 +144,6 @@ function selectSingleRow(row, tableBody) {
     row.classList.add('selected');
 }
 
-// Update the top section with the selected song data
 function updateTopSection(song) {
     document.getElementById('topTitle').textContent = song.Title;
     document.getElementById('topArtist').textContent = song.Artist;
@@ -171,49 +152,42 @@ function updateTopSection(song) {
     updateYouTubeLink(song.youtube_url);
 }
 
-// Update the YouTube link in the top section
 function updateYouTubeLink(youtube_url) {
     const youtubeLink = document.querySelector('.icons a[href*="youtube"]');
     youtubeLink.href = youtube_url || "https://www.youtube.com";
 }
 
-// Reset header styles
-function resetHeaderStyles(headers) {
-    headers.forEach(h => h.classList.remove('active-header'));
-}
-
-// Toggle sorting direction
-function toggleSortDirection(columnIndex) {
-    sortDirection[columnIndex] = sortDirection[columnIndex] === 'desc' ? 'asc' : 'desc';
-}
-
-// Sort table based on the selected column
-function sortTableByColumn(columnIndex) {
+function sortTableByColumn(columnIndex, data) {
     const sortKey = ['#', 'Title', 'Album', 'Views', 'Duration', 'ReleaseDate', 'Genre'][columnIndex];
     const isNumericSort = ['Views', 'Duration', 'ReleaseDate'].includes(sortKey);
 
-    currentData.sort((a, b) => {
+    data.sort((a, b) => {
         const comparison = isNumericSort ? sortNumerically(a, b, sortKey) : a[sortKey].localeCompare(b[sortKey]);
         return sortDirection[columnIndex] === 'desc' ? -comparison : comparison;
     });
 
-    populateTable(currentData);
+    populateTable(data);
 }
 
-// Numeric sort helper function
+function toggleSortDirection(columnIndex) {
+    sortDirection[columnIndex] = sortDirection[columnIndex] === 'desc' ? 'asc' : 'desc';
+}
+
+function sortTableByViews(data) {
+    data.sort((a, b) => b.Views - a.Views);
+}
+
 function sortNumerically(a, b, key) {
     if (key === 'Duration') return convertDurationToSeconds(a[key]) - convertDurationToSeconds(b[key]);
     if (key === 'ReleaseDate') return parseInt(a[key].substring(0, 4)) - parseInt(b[key].substring(0, 4));
     return a[key] - b[key];
 }
 
-// Convert duration to seconds
 function convertDurationToSeconds(duration) {
     const [minutes, seconds] = duration.split(':').map(Number);
     return minutes * 60 + seconds;
 }
 
-// Format views count
 function formatViews(number) {
     if (number >= 1e9) return (number / 1e9).toFixed(2) + ' B';
     if (number >= 1e6) return (number / 1e6).toFixed(1) + ' M';
