@@ -12,7 +12,6 @@
 </head>
 <body>
 
-
 <div class="container">
     <div class="top">
         <div class="image">
@@ -22,9 +21,7 @@
             <div id="topTitle" class="title">Title</div>
             <div id="topArtist" class="artists">Artist</div>
             <div id="topAlbum" class="album">Album</div>
-            <!-- Add this inside your .icons div -->
             <div class="icons">
-                <!-- Existing buttons -->
                 <a href="https://www.youtube.com" target="_blank" id="youtubeLink">
                     <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube">
                 </a>
@@ -33,15 +30,19 @@
                     <img src="https://cdn.icon-icons.com/icons2/3041/PNG/512/spotify_logo_icon_189218.png" alt="Spotify">
                 </a>
 
+                <select id="displayselext" class="display-select">
+                    <option value="200" selected>200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="All">All</option>
+                </select>
 
                 <button id="selectButton">Select</button>
-                <span id="selectedCount">  0</span>
+                <span id="selectedCount"> 0</span>
                 <button id="createPlaylistButton" style="display: none;">Create Playlist</button>
             </div>
-
         </div>
     </div>
-
 
     <div class="search_bar">
         <select id="searchCategory" class="search-select">
@@ -51,22 +52,15 @@
             <option value="Genre">Genre</option>
         </select>
         <input type="text" id="searchInput" placeholder="Enter search text..." class="search-input">
-        <button id="searchButton" aria-label="Search">
-            🔍
-        </button>
-        <button id="homeButton" aria-label="Home">
-            🏠
-        </button>
+        <button id="searchButton" aria-label="Search">🔍</button>
+        <button id="homeButton" aria-label="Home">🏠</button>
     </div>
-
-
-
 
     <div class="table">
         <table>
             <thead>
             <tr>
-                <th>#</th> <!-- New column for enumeration -->
+                <th>#</th>
                 <th>Title</th>
                 <th>Album</th>
                 <th>Views</th>
@@ -80,9 +74,6 @@
             </tbody>
         </table>
     </div>
-
-
-
 
 </div>
 
