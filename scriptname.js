@@ -3,6 +3,7 @@ let initialData = [];
 let displayedData = [];
 let selectionMode = false;
 let sortDirection = {};
+let rowsToShow = 200;
 
 document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentData = mergeDataBySongID(arData, tsData, ufData);
             initialData = [...currentData];
             sortTableByViews(currentData);
-            displayedData = [...currentData];
+            displayedData = getLimitedData(currentData, rowsToShow);
             populateTable(displayedData);
             setUpEventListeners();
         })
@@ -30,12 +31,12 @@ function mergeDataBySongID(arData, tsData, ufData) {
 }
 
 function setUpEventListeners() {
-    document.getElementById('searchButton').addEventListener('click', performSearch);
-    document.getElementById('searchInput').addEventListener('keypress', function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            performSearch();
-        }
+    document.getElementById('searchInput').addEventListener('input', performSearch);
+    document.getElementById('homeButton').addEventListener('click', resetTableToInitialState);
+    document.getElementById('displayselext').addEventListener('change', function() {
+        rowsToShow = this.value === 'All' ? initialData.length : parseInt(this.value);
+        displayedData = getLimitedData(currentData, rowsToShow);
+        populateTable(displayedData);
     });
 
     document.getElementById('homeButton').addEventListener('click', function() {
@@ -66,7 +67,7 @@ function setUpEventListeners() {
 function resetTableToInitialState() {
     currentData = [...initialData];
     sortTableByViews(currentData);
-    displayedData = [...currentData];
+    displayedData = getLimitedData(currentData, rowsToShow);
     populateTable(displayedData);
 }
 
@@ -83,6 +84,7 @@ function performSearch() {
     });
 
     sortTableByViews(displayedData);
+    displayedData = getLimitedData(displayedData, rowsToShow);
     populateTable(displayedData);
 }
 
@@ -106,17 +108,16 @@ function populateTable(data) {
             <td>${song.ReleaseDate ? song.ReleaseDate.substring(0, 4) : 'Not Available'}</td>
             <td>${song.Genre || 'Not Available'}</td>
         `;
-        row.isSelected = false;
         row.addEventListener('click', () => {
-            if (selectionMode) {
-                toggleSelection(row);
-            } else {
-                selectSingleRow(row, tableBody);
-                updateTopSection(song);
-            }
+            if (selectionMode) toggleSelection(row);
+            else selectSingleRow(row, tableBody);
         });
         tableBody.appendChild(row);
     });
+}
+
+function getLimitedData(data, limit) {
+    return data.slice(0, limit);
 }
 
 function toggleSelection(row) {
@@ -142,6 +143,7 @@ function selectSingleRow(row, tableBody) {
         currentlySelected.classList.remove('selected');
     }
     row.classList.add('selected');
+    updateTopSection(row.songData);
 }
 
 function updateTopSection(song) {
