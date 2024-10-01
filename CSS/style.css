@@ -1,0 +1,248 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top {
+    width: 95%;
+    margin: 6px auto;
+    padding: 10px;
+    background-color: #b2bdb1;
+    border: 3px solid #344e41;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border: 4px solid white;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: #344e41;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title, .artists, .album {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.artists {
+    font-size: 20px;
+}
+
+.album {
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a,
+.icons button {
+    margin-left: 10px;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.icons a {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.search_bar {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #588157;
+    border: 3px solid #344e41;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.search-select {
+    width: 15%;
+    height: 36px;
+    padding: 0 10px;
+    margin-right: 2%;
+    border: 2px solid #FFFFFF;
+    background-color: #98C1A6;
+    color: #333;
+    font-size: 16px;
+}
+
+.search-input {
+    width: 55%;
+    height: 36px;
+    padding: 0 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #98C1A6;
+    color: #333;
+    font-size: 16px;
+}
+
+#searchButton, #homeButton {
+    width: 15%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #344e41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#homeButton {
+    background-color: #A3B18A;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#selectButton {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #344e41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#createPlaylistButton {
+    background-color: #1DB954; /* Spotify Green */
+    color: white;
+    border: 2px solid #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#createPlaylistButton:hover {
+    background-color: #1ed760;
+}
+
+#searchButton:hover, #homeButton:hover {
+    background-color: #98C1A6;
+}
+
+.table {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #dad7cd;
+    border: 3px solid #344e41;
+    overflow-y: auto;
+    max-height: calc(60% - 12px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+th, td {
+    border: 3px solid white;
+    padding: 8px;
+    margin: 0;
+}
+
+th {
+    background-color: #588157;
+    height: 200%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+}
+
+.active-header {
+    background-color: #344e41;
+}
+
+.title-artist {
+    display: block;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 135%;
+}
+
+.song-artist {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 3%; }
+th:nth-child(2), td:nth-child(2) { width: 20%; }
+th:nth-child(3), td:nth-child(3) { width: 15%; }
+th:nth-child(4), td:nth-child(4) { width: 6%; }
+th:nth-child(5), td:nth-child(5) { width: 4%; }
+th:nth-child(6), td:nth-child(6) { width: 4%; }
+th:nth-child(7), td:nth-child(7) { width: 15%; }
+
+.table tbody tr:hover {
+    background-color: #a3b18a !important;
+}
+
+.selected {
+    background-color: #344e41;
+    color: white;
+}
