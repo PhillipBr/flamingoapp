@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Global Trends</title>
+    <link rel="stylesheet" href="CSS/sp_style.css">
+    <link rel="icon" href="/images/ico.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="horizontal-banner">
+    <a href="index.html" class="banner-segment" id="home">YOUTUBE MOST VIEWED</a>
+    <a href="sp_g.html" class="banner-segment" id="spotify_trends">SPOTIFY WEEKLY TRENDS</a>
+    <div class="banner-segment" id="segment3"></div>
+    <div class="banner-segment" id="segment4"></div>
+    <div class="banner-segment" id="segment5"></div>
+    <div class="banner-segment" id="segment6"></div>
+</div>
+
+<div class="container">
+    <div class="top">
+        <div class="image">
+            <img src="images/flamingo%20logo.webp" id="topImage" alt="Album Cover">
+        </div>
+        <div class="text">
+            <div id="topTitle" class="title">Title</div>
+            <div id="topArtist" class="artists">Artist</div>
+            <div id="topAlbum" class="album">Album</div>
+
+            <!-- Custom Country Selector -->
+            <div class="dropdown-container">
+                <input type="text" id="countrySelect" class="display-select" placeholder="Select Country..." readonly>
+                <div class="dropdown-list" id="countryOptions">
+                    <div value="global">🌍 Global</div>
+                    <div value="cl">🇨🇱  Chile</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search_bar">
+        <select id="searchCategory" class="search-select">
+            <option value="Title">Title</option>
+            <option value="Artist">Artist</option>
+            <option value="Album">Album</option>
+            <option value="Genre">Genre</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Enter search text..." class="search-input">
+        <button id="searchButton" aria-label="Search">🔍</button>
+        <button id="homeButton" aria-label="Home">🏠</button>
+    </div>
+
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Position</th>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Duration</th>
+                <th>Release Year</th>
+                <th>Genre</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="sp_g_scriptname.js"></script>
+</body>
+</html>
