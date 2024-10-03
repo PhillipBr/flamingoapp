@@ -1,0 +1,1202 @@
+[
+    {
+        "SongID": 1,
+        "Title": "Cruel Summer",
+        "Artist": "Taylor Swift",
+        "Position": 174
+    },
+    {
+        "SongID": 6,
+        "Title": "One Of The Girls",
+        "Artist": "The Weeknd",
+        "Position": 98
+    },
+    {
+        "SongID": 17,
+        "Title": "Daylight",
+        "Artist": "David Kushner",
+        "Position": 157
+    },
+    {
+        "SongID": 20,
+        "Title": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
+        "Artist": "Billie Eilish",
+        "Position": 108
+    },
+    {
+        "SongID": 27,
+        "Title": "Beautiful Things",
+        "Artist": "Benson Boone",
+        "Position": 11
+    },
+    {
+        "SongID": 37,
+        "Title": "I Wanna Be Yours",
+        "Artist": "Arctic Monkeys",
+        "Position": 87
+    },
+    {
+        "SongID": 38,
+        "Title": "I Remember Everything",
+        "Artist": "Zach Bryan",
+        "Position": 37
+    },
+    {
+        "SongID": 45,
+        "Title": "See You Again",
+        "Artist": "Tyler, The Creator",
+        "Position": 168
+    },
+    {
+        "SongID": 46,
+        "Title": "FE!N",
+        "Artist": "Travis Scott",
+        "Position": 89
+    },
+    {
+        "SongID": 56,
+        "Title": "Baby Don't Hurt Me",
+        "Artist": "David Guetta",
+        "Position": 182
+    },
+    {
+        "SongID": 61,
+        "Title": "Yellow",
+        "Artist": "Coldplay",
+        "Position": 59
+    },
+    {
+        "SongID": 63,
+        "Title": "Something in the Orange",
+        "Artist": "Zach Bryan",
+        "Position": 79
+    },
+    {
+        "SongID": 64,
+        "Title": "Sweater Weather",
+        "Artist": "The Neighbourhood",
+        "Position": 64
+    },
+    {
+        "SongID": 96,
+        "Title": "Prada",
+        "Artist": "cassö",
+        "Position": 139
+    },
+    {
+        "SongID": 97,
+        "Title": "Another Love",
+        "Artist": "Tom Odell",
+        "Position": 56
+    },
+    {
+        "SongID": 102,
+        "Title": "No Role Modelz",
+        "Artist": "J. Cole",
+        "Position": 187
+    },
+    {
+        "SongID": 103,
+        "Title": "Pink + White",
+        "Artist": "Frank Ocean",
+        "Position": 85
+    },
+    {
+        "SongID": 108,
+        "Title": "Someone You Loved",
+        "Artist": "Lewis Capaldi",
+        "Position": 82
+    },
+    {
+        "SongID": 145,
+        "Title": "exes",
+        "Artist": "Tate McRae",
+        "Position": 196
+    },
+    {
+        "SongID": 150,
+        "Title": "When I Was Your Man",
+        "Artist": "Bruno Mars",
+        "Position": 154
+    },
+    {
+        "SongID": 174,
+        "Title": "The Color Violet",
+        "Artist": "Tory Lanez",
+        "Position": 188
+    },
+    {
+        "SongID": 176,
+        "Title": "Last Night",
+        "Artist": "Morgan Wallen",
+        "Position": 166
+    },
+    {
+        "SongID": 201,
+        "Title": "Viva La Vida",
+        "Artist": "Coldplay",
+        "Position": 75
+    },
+    {
+        "SongID": 202,
+        "Title": "Heartless",
+        "Artist": "Kanye West",
+        "Position": 172
+    },
+    {
+        "SongID": 205,
+        "Title": "Apocalypse",
+        "Artist": "Cigarettes After Sex",
+        "Position": 90
+    },
+    {
+        "SongID": 208,
+        "Title": "Sparks",
+        "Artist": "Coldplay",
+        "Position": 167
+    },
+    {
+        "SongID": 225,
+        "Title": "Whatever",
+        "Artist": "Kygo",
+        "Position": 73
+    },
+    {
+        "SongID": 237,
+        "Title": "Overdrive",
+        "Artist": "Ofenbach",
+        "Position": 101
+    },
+    {
+        "SongID": 244,
+        "Title": "Je te laisserai des mots",
+        "Artist": "Patrick Watson",
+        "Position": 143
+    },
+    {
+        "SongID": 246,
+        "Title": "In The Stars",
+        "Artist": "Benson Boone",
+        "Position": 83
+    },
+    {
+        "SongID": 274,
+        "Title": "Numb",
+        "Artist": "Linkin Park",
+        "Position": 80
+    },
+    {
+        "SongID": 299,
+        "Title": "Something Just Like This",
+        "Artist": "The Chainsmokers",
+        "Position": 161
+    },
+    {
+        "SongID": 301,
+        "Title": "The Night We Met",
+        "Artist": "Lord Huron",
+        "Position": 12
+    },
+    {
+        "SongID": 327,
+        "Title": "The Way I Are",
+        "Artist": "Timbaland",
+        "Position": 119
+    },
+    {
+        "SongID": 376,
+        "Title": "you broke me first",
+        "Artist": "Tate McRae",
+        "Position": 109
+    },
+    {
+        "SongID": 401,
+        "Title": "Unforgettable",
+        "Artist": "French Montana",
+        "Position": 146
+    },
+    {
+        "SongID": 404,
+        "Title": "All The Stars",
+        "Artist": "Kendrick Lamar",
+        "Position": 102
+    },
+    {
+        "SongID": 413,
+        "Title": "Scared To Start",
+        "Artist": "Michael Marcagi",
+        "Position": 53
+    },
+    {
+        "SongID": 473,
+        "Title": "Iris",
+        "Artist": "The Goo Goo Dolls",
+        "Position": 62
+    },
+    {
+        "SongID": 474,
+        "Title": "Africa",
+        "Artist": "TOTO",
+        "Position": 160
+    },
+    {
+        "SongID": 533,
+        "Title": "Take Me To Church",
+        "Artist": "Hozier",
+        "Position": 115
+    },
+    {
+        "SongID": 551,
+        "Title": "Shallow",
+        "Artist": "Lady Gaga",
+        "Position": 192
+    },
+    {
+        "SongID": 678,
+        "Title": "Only Girl (In The World)",
+        "Artist": "Rihanna",
+        "Position": 117
+    },
+    {
+        "SongID": 725,
+        "Title": "Always Remember Us This Way",
+        "Artist": "Lady Gaga",
+        "Position": 153
+    },
+    {
+        "SongID": 734,
+        "Title": "HIGHEST IN THE ROOM",
+        "Artist": "Travis Scott",
+        "Position": 107
+    },
+    {
+        "SongID": 793,
+        "Title": "Easy On Me",
+        "Artist": "Adele",
+        "Position": 120
+    },
+    {
+        "SongID": 821,
+        "Title": "You Shook Me All Night Long",
+        "Artist": "AC/DC",
+        "Position": 186
+    },
+    {
+        "SongID": 867,
+        "Title": "Set Fire to the Rain",
+        "Artist": "Adele",
+        "Position": 136
+    },
+    {
+        "SongID": 906,
+        "Title": "Hall of Fame",
+        "Artist": "The Script",
+        "Position": 190
+    },
+    {
+        "SongID": 968,
+        "Title": "Where Are You Now",
+        "Artist": "Lost Frequencies",
+        "Position": 175
+    },
+    {
+        "SongID": 1062,
+        "Title": "Hold the Line",
+        "Artist": "TOTO",
+        "Position": 159
+    },
+    {
+        "SongID": 1063,
+        "Title": "Sultans Of Swing",
+        "Artist": "Dire Straits",
+        "Position": 132
+    },
+    {
+        "SongID": 1369,
+        "Title": "Unstoppable",
+        "Artist": "Sia",
+        "Position": 164
+    },
+    {
+        "SongID": 1507,
+        "Title": "S&M",
+        "Artist": "Rihanna",
+        "Position": 151
+    },
+    {
+        "SongID": 1509,
+        "Title": "Someone Like You",
+        "Artist": "Adele",
+        "Position": 86
+    },
+    {
+        "SongID": 1593,
+        "Title": "Lush Life",
+        "Artist": "Zara Larsson",
+        "Position": 162
+    },
+    {
+        "SongID": 1896,
+        "Title": "Unwritten",
+        "Artist": "Natasha Bedingfield",
+        "Position": 111
+    },
+    {
+        "SongID": 1935,
+        "Title": "Symphony",
+        "Artist": "Clean Bandit",
+        "Position": 156
+    },
+    {
+        "SongID": 2061,
+        "Title": "Stumblin' In",
+        "Artist": "CYRIL",
+        "Position": 116
+    },
+    {
+        "SongID": 2119,
+        "Title": "GHOST TOWN",
+        "Artist": "Benson Boone",
+        "Position": 180
+    },
+    {
+        "SongID": 2264,
+        "Title": "greedy",
+        "Artist": "Tate McRae",
+        "Position": 122
+    },
+    {
+        "SongID": 2670,
+        "Title": "Lose Control",
+        "Artist": "Teddy Swims",
+        "Position": 13
+    },
+    {
+        "SongID": 3901,
+        "Title": "Love In The Dark",
+        "Artist": "Adele",
+        "Position": 177
+    },
+    {
+        "SongID": 4402,
+        "Title": "Bye Bye Bye",
+        "Artist": "*NSYNC",
+        "Position": 61
+    },
+    {
+        "SongID": 5068,
+        "Title": "Forever Young",
+        "Artist": "Alphaville",
+        "Position": 43
+    },
+    {
+        "SongID": 6875,
+        "Title": "Stay",
+        "Artist": "Rihanna",
+        "Position": 76
+    },
+    {
+        "SongID": 6984,
+        "Title": "Jeg vil ha (Parlamentet)",
+        "Artist": "Fjellrev",
+        "Position": 198
+    },
+    {
+        "SongID": 7676,
+        "Title": "The Door",
+        "Artist": "Teddy Swims",
+        "Position": 57
+    },
+    {
+        "SongID": 9343,
+        "Title": "Feeling Myself - Roc Boyz Remix",
+        "Artist": "23",
+        "Position": 113
+    },
+    {
+        "SongID": 9344,
+        "Title": "Josefin",
+        "Artist": "Delara",
+        "Position": 138
+    },
+    {
+        "SongID": 10053,
+        "Title": "Where's My Love",
+        "Artist": "SYML",
+        "Position": 152
+    },
+    {
+        "SongID": 10904,
+        "Title": "Har Dig",
+        "Artist": "Yasin",
+        "Position": 194
+    },
+    {
+        "SongID": 11932,
+        "Title": "NIGHTS LIKE THIS",
+        "Artist": "The Kid LAROI",
+        "Position": 42
+    },
+    {
+        "SongID": 12447,
+        "Title": "Espresso",
+        "Artist": "Sabrina Carpenter",
+        "Position": 9
+    },
+    {
+        "SongID": 12448,
+        "Title": "MILLION DOLLAR BABY",
+        "Artist": "Tommy Richman",
+        "Position": 114
+    },
+    {
+        "SongID": 12449,
+        "Title": "LUNCH",
+        "Artist": "Billie Eilish",
+        "Position": 150
+    },
+    {
+        "SongID": 12450,
+        "Title": "Not Like Us",
+        "Artist": "Kendrick Lamar",
+        "Position": 81
+    },
+    {
+        "SongID": 12451,
+        "Title": "BIRDS OF A FEATHER",
+        "Artist": "Billie Eilish",
+        "Position": 7
+    },
+    {
+        "SongID": 12452,
+        "Title": "I Had Some Help (Feat. Morgan Wallen)",
+        "Artist": "Post Malone",
+        "Position": 10
+    },
+    {
+        "SongID": 12453,
+        "Title": "Too Sweet",
+        "Artist": "Hozier",
+        "Position": 29
+    },
+    {
+        "SongID": 12454,
+        "Title": "i like the way you kiss me",
+        "Artist": "Artemas",
+        "Position": 65
+    },
+    {
+        "SongID": 12499,
+        "Title": "CHIHIRO",
+        "Artist": "Billie Eilish",
+        "Position": 123
+    },
+    {
+        "SongID": 12521,
+        "Title": "A Bar Song (Tipsy)",
+        "Artist": "Shaboozey",
+        "Position": 8
+    },
+    {
+        "SongID": 12597,
+        "Title": "we can't be friends (wait for your love)",
+        "Artist": "Ariana Grande",
+        "Position": 77
+    },
+    {
+        "SongID": 12606,
+        "Title": "End of Beginning",
+        "Artist": "Djo",
+        "Position": 93
+    },
+    {
+        "SongID": 12715,
+        "Title": "Stargazing",
+        "Artist": "Myles Smith",
+        "Position": 34
+    },
+    {
+        "SongID": 12959,
+        "Title": "WILDFLOWER",
+        "Artist": "Billie Eilish",
+        "Position": 38
+    },
+    {
+        "SongID": 13136,
+        "Title": "Belong Together",
+        "Artist": "Mark Ambor",
+        "Position": 47
+    },
+    {
+        "SongID": 13201,
+        "Title": "Pink Skies",
+        "Artist": "Zach Bryan",
+        "Position": 91
+    },
+    {
+        "SongID": 13271,
+        "Title": "Austin",
+        "Artist": "Dasha",
+        "Position": 21
+    },
+    {
+        "SongID": 13481,
+        "Title": "Slow It Down",
+        "Artist": "Benson Boone",
+        "Position": 46
+    },
+    {
+        "SongID": 13521,
+        "Title": "Good Luck, Babe!",
+        "Artist": "Chappell Roan",
+        "Position": 14
+    },
+    {
+        "SongID": 13584,
+        "Title": "Stick Season",
+        "Artist": "Noah Kahan",
+        "Position": 84
+    },
+    {
+        "SongID": 13726,
+        "Title": "Turné",
+        "Artist": "Bausa",
+        "Position": 165
+    },
+    {
+        "SongID": 14868,
+        "Title": "TEXAS HOLD 'EM",
+        "Artist": "Beyoncé",
+        "Position": 191
+    },
+    {
+        "SongID": 14870,
+        "Title": "I Don't Wanna Wait",
+        "Artist": "David Guetta",
+        "Position": 39
+    },
+    {
+        "SongID": 14872,
+        "Title": "The Sound of Silence - CYRIL Remix",
+        "Artist": "Disturbed",
+        "Position": 17
+    },
+    {
+        "SongID": 14874,
+        "Title": "Pedro",
+        "Artist": "Jaxomy",
+        "Position": 185
+    },
+    {
+        "SongID": 14972,
+        "Title": "Superstars (mageplask)",
+        "Artist": "Golfklubb",
+        "Position": 148
+    },
+    {
+        "SongID": 17566,
+        "Title": "Italia",
+        "Artist": "UNDERGRUNN",
+        "Position": 170
+    },
+    {
+        "SongID": 17871,
+        "Title": "Ain't No Love In Oklahoma (From Twisters: The Album)",
+        "Artist": "Luke Combs",
+        "Position": 197
+    },
+    {
+        "SongID": 18960,
+        "Title": "Floden",
+        "Artist": "Emma Steinbakken",
+        "Position": 130
+    },
+    {
+        "SongID": 26557,
+        "Title": "I'm Good (Blue)",
+        "Artist": "David Guetta",
+        "Position": 96
+    },
+    {
+        "SongID": 30951,
+        "Title": "Don't Stop Believin' (2022 Remaster)",
+        "Artist": "Journey",
+        "Position": 105
+    },
+    {
+        "SongID": 42023,
+        "Title": "Before You Leave Me",
+        "Artist": "Alex Warren",
+        "Position": 100
+    },
+    {
+        "SongID": 42027,
+        "Title": "Sølvskje",
+        "Artist": "Bausa",
+        "Position": 31
+    },
+    {
+        "SongID": 42028,
+        "Title": "SOLDAT - RMX",
+        "Artist": "VC Barre",
+        "Position": 40
+    },
+    {
+        "SongID": 42029,
+        "Title": "Bærum Bitches (Mannschaft)",
+        "Artist": "Søte og Rare Gutter",
+        "Position": 22
+    },
+    {
+        "SongID": 42030,
+        "Title": "Dans Med Meg",
+        "Artist": "Tigergutt101",
+        "Position": 69
+    },
+    {
+        "SongID": 42032,
+        "Title": "Tenke Sjæl",
+        "Artist": "UNDERGRUNN",
+        "Position": 97
+    },
+    {
+        "SongID": 42035,
+        "Title": "Da vi var to",
+        "Artist": "Carina Dahl",
+        "Position": 99
+    },
+    {
+        "SongID": 42036,
+        "Title": "Roc Boyz Freestyle",
+        "Artist": "Roc Boyz",
+        "Position": 67
+    },
+    {
+        "SongID": 42038,
+        "Title": "Situasjon",
+        "Artist": "Ari Bajgora",
+        "Position": 74
+    },
+    {
+        "SongID": 42041,
+        "Title": "Casino",
+        "Artist": "Golfklubb",
+        "Position": 106
+    },
+    {
+        "SongID": 45750,
+        "Title": "CALMA",
+        "Artist": "Y4ska",
+        "Position": 135
+    },
+    {
+        "SongID": 61850,
+        "Title": "når du slår ut håret blir jeg slått ut",
+        "Artist": "Broiler",
+        "Position": 200
+    },
+    {
+        "SongID": 110771,
+        "Title": "Young And Beautiful",
+        "Artist": "Lana Del Rey",
+        "Position": 141
+    },
+    {
+        "SongID": 111435,
+        "Title": "Meet Me Halfway",
+        "Artist": "Black Eyed Peas",
+        "Position": 147
+    },
+    {
+        "SongID": 113552,
+        "Title": "when the party's over",
+        "Artist": "Billie Eilish",
+        "Position": 112
+    },
+    {
+        "SongID": 113593,
+        "Title": "Blinding Lights",
+        "Artist": "The Weeknd",
+        "Position": 158
+    },
+    {
+        "SongID": 115648,
+        "Title": "lovely",
+        "Artist": "Billie Eilish",
+        "Position": 110
+    },
+    {
+        "SongID": 130869,
+        "Title": "I Smoked Away My Brain (I'm God x Demons Mashup)",
+        "Artist": "A$AP Rocky",
+        "Position": 171
+    },
+    {
+        "SongID": 133628,
+        "Title": "White Ferrari",
+        "Artist": "Frank Ocean",
+        "Position": 144
+    },
+    {
+        "SongID": 175618,
+        "Title": "Bare så du vett det",
+        "Artist": "Stavangerkameratene",
+        "Position": 195
+    },
+    {
+        "SongID": 175624,
+        "Title": "Den finast eg veit",
+        "Artist": "Hellbillies",
+        "Position": 184
+    },
+    {
+        "SongID": 175628,
+        "Title": "Haien Kommer (Sharkdog 2023)",
+        "Artist": "Kudos",
+        "Position": 125
+    },
+    {
+        "SongID": 175632,
+        "Title": "Rundt neste sving",
+        "Artist": "Rotlaus",
+        "Position": 94
+    },
+    {
+        "SongID": 175638,
+        "Title": "Badebussen",
+        "Artist": "DJ MøMø",
+        "Position": 33
+    },
+    {
+        "SongID": 175646,
+        "Title": "Creem",
+        "Artist": "Roc Boyz",
+        "Position": 176
+    },
+    {
+        "SongID": 175685,
+        "Title": "Hjerteknuser",
+        "Artist": "Kaizers Orchestra",
+        "Position": 126
+    },
+    {
+        "SongID": 175764,
+        "Title": "Sett deg ned",
+        "Artist": "Roc Boyz",
+        "Position": 149
+    },
+    {
+        "SongID": 176299,
+        "Title": "Her kommer Bjørnis",
+        "Artist": "Brannbamsen Bjørnis",
+        "Position": 137
+    },
+    {
+        "SongID": 177221,
+        "Title": "På Meg (Shook Ones)",
+        "Artist": "Fjellrev",
+        "Position": 121
+    },
+    {
+        "SongID": 198448,
+        "Title": "I miss you, I’m sorry",
+        "Artist": "Gracie Abrams",
+        "Position": 95
+    },
+    {
+        "SongID": 242695,
+        "Title": "Working",
+        "Artist": "Roc Boyz",
+        "Position": 155
+    },
+    {
+        "SongID": 242702,
+        "Title": "VENNELØS",
+        "Artist": "Blackie",
+        "Position": 124
+    },
+    {
+        "SongID": 242714,
+        "Title": "Cocaina",
+        "Artist": "Roc Boyz",
+        "Position": 129
+    },
+    {
+        "SongID": 242717,
+        "Title": "Viva La Vida",
+        "Artist": "Soppgirobygget",
+        "Position": 28
+    },
+    {
+        "SongID": 242723,
+        "Title": "RIKERUD",
+        "Artist": "Soppgirobygget",
+        "Position": 92
+    },
+    {
+        "SongID": 309424,
+        "Title": "Please Please Please",
+        "Artist": "Sabrina Carpenter",
+        "Position": 19
+    },
+    {
+        "SongID": 501280,
+        "Title": "Die With A Smile",
+        "Artist": "Lady Gaga",
+        "Position": 1
+    },
+    {
+        "SongID": 501282,
+        "Title": "Taste",
+        "Artist": "Sabrina Carpenter",
+        "Position": 4
+    },
+    {
+        "SongID": 501288,
+        "Title": "The Emptiness Machine",
+        "Artist": "Linkin Park",
+        "Position": 18
+    },
+    {
+        "SongID": 501290,
+        "Title": "Bed Chem",
+        "Artist": "Sabrina Carpenter",
+        "Position": 55
+    },
+    {
+        "SongID": 501295,
+        "Title": "Big Dawgs",
+        "Artist": "Hanumankind",
+        "Position": 63
+    },
+    {
+        "SongID": 501299,
+        "Title": "Gata Only",
+        "Artist": "FloyyMenor",
+        "Position": 169
+    },
+    {
+        "SongID": 501301,
+        "Title": "Guess featuring Billie Eilish",
+        "Artist": "Charli xcx",
+        "Position": 44
+    },
+    {
+        "SongID": 501316,
+        "Title": "Move",
+        "Artist": "Adam Port",
+        "Position": 49
+    },
+    {
+        "SongID": 501325,
+        "Title": "I Love You, I'm Sorry",
+        "Artist": "Gracie Abrams",
+        "Position": 25
+    },
+    {
+        "SongID": 501328,
+        "Title": "Sailor Song",
+        "Artist": "Gigi Perez",
+        "Position": 26
+    },
+    {
+        "SongID": 501342,
+        "Title": "Lies Lies Lies",
+        "Artist": "Morgan Wallen",
+        "Position": 140
+    },
+    {
+        "SongID": 501348,
+        "Title": "Apple",
+        "Artist": "Charli xcx",
+        "Position": 178
+    },
+    {
+        "SongID": 501359,
+        "Title": "KEHLANI",
+        "Artist": "Jordan Adetunji",
+        "Position": 142
+    },
+    {
+        "SongID": 501377,
+        "Title": "Black Friday (pretty like the sun)",
+        "Artist": "Lost Frequencies",
+        "Position": 88
+    },
+    {
+        "SongID": 501456,
+        "Title": "Houdini",
+        "Artist": "Eminem",
+        "Position": 48
+    },
+    {
+        "SongID": 501607,
+        "Title": "Guy For That (Feat. Luke Combs)",
+        "Artist": "Post Malone",
+        "Position": 60
+    },
+    {
+        "SongID": 501619,
+        "Title": "Evergreen",
+        "Artist": "Richy Mitch & The Coal Miners",
+        "Position": 71
+    },
+    {
+        "SongID": 501718,
+        "Title": "Thank You (Not So Bad)",
+        "Artist": "Dimitri Vegas & Like Mike",
+        "Position": 179
+    },
+    {
+        "SongID": 501723,
+        "Title": "Så længe jeg er sexy.",
+        "Artist": "Annika",
+        "Position": 5
+    },
+    {
+        "SongID": 501803,
+        "Title": "KEEP UP",
+        "Artist": "Odetari",
+        "Position": 78
+    },
+    {
+        "SongID": 502082,
+        "Title": "WE PRAY",
+        "Artist": "Coldplay",
+        "Position": 173
+    },
+    {
+        "SongID": 502086,
+        "Title": "feelslikeimfallinginlove",
+        "Artist": "Coldplay",
+        "Position": 118
+    },
+    {
+        "SongID": 502445,
+        "Title": "Carry You Home",
+        "Artist": "Alex Warren",
+        "Position": 30
+    },
+    {
+        "SongID": 502463,
+        "Title": "Let's Go",
+        "Artist": "Arif Murakami",
+        "Position": 6
+    },
+    {
+        "SongID": 502464,
+        "Title": "Sigg",
+        "Artist": "Ballinciaga",
+        "Position": 3
+    },
+    {
+        "SongID": 502465,
+        "Title": "24/7",
+        "Artist": "Rakkere",
+        "Position": 27
+    },
+    {
+        "SongID": 502466,
+        "Title": "Utested",
+        "Artist": "Ari Bajgora",
+        "Position": 16
+    },
+    {
+        "SongID": 502469,
+        "Title": "BlimE! - Ferdig Snakka",
+        "Artist": "Ane Norum Kvistad",
+        "Position": 20
+    },
+    {
+        "SongID": 502471,
+        "Title": "Sucker For Pain",
+        "Artist": "Golfklubb",
+        "Position": 32
+    },
+    {
+        "SongID": 502472,
+        "Title": "Se på meg",
+        "Artist": "Tigergutt101",
+        "Position": 45
+    },
+    {
+        "SongID": 502475,
+        "Title": "BABY I'M BACK",
+        "Artist": "The Kid LAROI",
+        "Position": 54
+    },
+    {
+        "SongID": 502476,
+        "Title": "BLINKEGEOX (Pleasuredome)",
+        "Artist": "BERGREM",
+        "Position": 50
+    },
+    {
+        "SongID": 502647,
+        "Title": "I Might",
+        "Artist": "Sarettii",
+        "Position": 23
+    },
+    {
+        "SongID": 502648,
+        "Title": "Aiko",
+        "Artist": "Asme",
+        "Position": 199
+    },
+    {
+        "SongID": 502651,
+        "Title": "SAHBI",
+        "Artist": "ADAAM",
+        "Position": 70
+    },
+    {
+        "SongID": 502669,
+        "Title": "Sista Gång",
+        "Artist": "C.Gambino",
+        "Position": 104
+    },
+    {
+        "SongID": 502677,
+        "Title": "Diet Pepsi",
+        "Artist": "Addison Rae",
+        "Position": 72
+    },
+    {
+        "SongID": 503594,
+        "Title": "Dancing In The Flames",
+        "Artist": "The Weeknd",
+        "Position": 68
+    },
+    {
+        "SongID": 503616,
+        "Title": "It's ok I'm ok",
+        "Artist": "Tate McRae",
+        "Position": 24
+    },
+    {
+        "SongID": 503653,
+        "Title": "Embrace It",
+        "Artist": "Ndotz",
+        "Position": 52
+    },
+    {
+        "SongID": 504620,
+        "Title": "Bad Dreams",
+        "Artist": "Teddy Swims",
+        "Position": 35
+    },
+    {
+        "SongID": 504707,
+        "Title": "Talk My Shit",
+        "Artist": "Roc Boyz",
+        "Position": 2
+    },
+    {
+        "SongID": 504890,
+        "Title": "Vanilj",
+        "Artist": "BoBa",
+        "Position": 131
+    },
+    {
+        "SongID": 531197,
+        "Title": "Burning Down",
+        "Artist": "Alex Warren",
+        "Position": 15
+    },
+    {
+        "SongID": 531207,
+        "Title": "Søv når æ dør",
+        "Artist": "Hagle",
+        "Position": 36
+    },
+    {
+        "SongID": 531209,
+        "Title": "Ring meg opp",
+        "Artist": "Tigergutt101",
+        "Position": 41
+    },
+    {
+        "SongID": 531364,
+        "Title": "Lost and found",
+        "Artist": "Molly Sandén",
+        "Position": 51
+    },
+    {
+        "SongID": 531664,
+        "Title": "Alibi",
+        "Artist": "Sevdaliza",
+        "Position": 145
+    },
+    {
+        "SongID": 531786,
+        "Title": "Can't Hold Us",
+        "Artist": "Macklemore & Ryan Lewis",
+        "Position": 163
+    },
+    {
+        "SongID": 531793,
+        "Title": "Skyfall - Full Length",
+        "Artist": "Adele",
+        "Position": 181
+    },
+    {
+        "SongID": 532228,
+        "Title": "I Adore You",
+        "Artist": "HUGEL",
+        "Position": 133
+    },
+    {
+        "SongID": 536529,
+        "Title": "Samme for meg",
+        "Artist": "Søte og Rare Gutter",
+        "Position": 58
+    },
+    {
+        "SongID": 536530,
+        "Title": "Pleasuredome 2025: Hjemmesnekk",
+        "Artist": "Festefar",
+        "Position": 66
+    },
+    {
+        "SongID": 536539,
+        "Title": "Heim te ståvo",
+        "Artist": "Tobias Sten",
+        "Position": 103
+    },
+    {
+        "SongID": 536547,
+        "Title": "Vin",
+        "Artist": "Beathoven",
+        "Position": 127
+    },
+    {
+        "SongID": 536548,
+        "Title": "Pretty Slowly",
+        "Artist": "Benson Boone",
+        "Position": 128
+    },
+    {
+        "SongID": 536552,
+        "Title": "Nachpit",
+        "Artist": "Soppgirobygget",
+        "Position": 134
+    },
+    {
+        "SongID": 536567,
+        "Title": "OLE BRUMM",
+        "Artist": "TIX",
+        "Position": 183
+    },
+    {
+        "SongID": 536569,
+        "Title": "Piya Piya Calling",
+        "Artist": "Karpe",
+        "Position": 189
+    },
+    {
+        "SongID": 536571,
+        "Title": "Troubled Waters",
+        "Artist": "Alex Warren",
+        "Position": 193
+    }
+]
