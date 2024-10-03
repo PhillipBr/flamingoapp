@@ -4,12 +4,12 @@ let displayedData = [];
 let sortDirection = {};
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadData('Global');
+    loadData('global'); // Initial load with the global dataset using lowercase 'global'
     setUpCountryDropdown();
 });
 
 function loadData(country) {
-    const jsonFile = `DATABASES/SPOTIFY/SP_${country}.json`;
+    const jsonFile = `DATABASES/SPOTIFY/SP_${country}.json`; // Correctly reference the JSON file based on country code
 
     Promise.all([
         fetch(jsonFile).then(response => response.json()),
