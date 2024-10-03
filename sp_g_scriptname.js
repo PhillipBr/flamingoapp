@@ -4,17 +4,12 @@ let displayedData = [];
 let sortDirection = {};
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadData('global'); // Initial load with the global dataset
+    loadData('global');
     setUpCountryDropdown();
 });
 
 function loadData(country) {
-    let jsonFile;
-    if (country === 'global') {
-        jsonFile = 'DATABASES/SPOTIFY/SP_Global.json';
-    } else if (country === 'cl') {
-        jsonFile = 'DATABASES/SPOTIFY/SP_cl.json';
-    }
+    const jsonFile = `DATABASES/SPOTIFY/SP_${country}.json`;
 
     Promise.all([
         fetch(jsonFile).then(response => response.json()),
@@ -27,7 +22,7 @@ function loadData(country) {
             sortTableByPosition(currentData);
             displayedData = [...currentData];
             populateTable(displayedData);
-            setUpEventListeners(); // Reset event listeners after loading new data
+            setUpEventListeners();
         })
         .catch(error => console.error('Error loading JSON files:', error));
 }
@@ -82,7 +77,7 @@ function setUpEventListeners() {
         sortDirection[index] = 'asc';
         header.onclick = () => {
             toggleSortDirection(index);
-            sortTableByColumn(index, currentData); // Use currentData to ensure active dataset is sorted
+            sortTableByColumn(index, currentData);
         };
     });
 }
