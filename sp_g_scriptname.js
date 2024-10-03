@@ -4,7 +4,7 @@ let displayedData = [];
 let sortDirection = {};
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadData('global');
+    loadData('Global');
     setUpCountryDropdown();
 });
 
