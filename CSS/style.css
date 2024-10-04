@@ -8,7 +8,7 @@ body, html {
 
 .horizontal-banner {
     width: 100%;
-    height: 4vh;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     background-color: #344e41;
@@ -17,7 +17,7 @@ body, html {
 }
 
 .banner-segment {
-    width: 17%;
+    width: 27%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -38,6 +38,27 @@ body, html {
     background-color: #98C1A6;
     color: #344e41;
 }
+
+#segment3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#bannerLogo {
+    width: 130px; /* Adjust the size as needed */
+    height: 130px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid white; /* Notable white border */
+    transition: transform 0.3s, border-color 0.3s; /* Add smooth transitions */
+}
+
+#segment3:hover #bannerLogo {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    border-color: #98C1A6; /* Change border color on hover */
+}
+
 
 .container {
     display: flex;
