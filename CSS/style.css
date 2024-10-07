@@ -330,6 +330,8 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         border-color: #98C1A6;
     }
 
+
+
     .top {
         width: 80%;
         margin: 6px auto;
@@ -416,6 +418,148 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 }
 
+@media (max-height: 600px) and (orientation: landscape) {
+    .horizontal-banner {
+        font-size: calc(1vw + 1vh);
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #344e41;
+        border-bottom: 5px solid white;
+
+    }
+    #segment3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    #bannerLogo {
+        width: 5vw;
+        height: auto;
+        border-radius: 50%;
+        border: 6px solid white;
+    }
+
+    #segment3:hover #bannerLogo {
+        transform: scale(1.1);
+        border-color: #98C1A6;
+    }
+
+    .top {
+        flex-direction: row; /* Ensure side-by-side layout */
+        align-items: stretch; /* Align items in a line */
+        height: 25vh; /* Increase height */
+    }
+
+    .image, .text {
+        flex: 1 0 50%; /* Assign 50% of the space to each */
+        margin: 2px; /* Reduce margin */
+        height: 100%; /* Full height of the parent container */
+    }
+
+    .image {
+        max-width: 23vh; /* Maintain aspect ratio for images */
+        height: 23vh; /* Maintain aspect ratio */
+    }
+
+    .image img {
+        width: 100%; /* Ensure the image covers the area */
+        height: 100%; /* Adjust height automatically */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .text {
+        padding: 1%; /* Adjust padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 21vh; /* Limit the height to match the image */
+        overflow: auto; /* Add scroll on overflow */
+    }
+
+    .title, .artists, .album {
+        white-space: normal; /* Allow text wrapping */
+    }
+
+    .display-select, .search-select, .search-input {
+        height: 5vh;
+        padding: 0 10px;
+        border: 2px solid #FFFFFF;
+        background-color: #98C1A6;
+        color: #333;
+        font-size: 3.5vh;
+    }
+
+    .search_bar {
+        width: 95%;
+        margin: 4px auto;
+        background-color: #588157;
+        border: 3px solid #344e41;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+        height: 6vh;
+
+    }
+
+    #searchButton, #homeButton {
+        width: 10%;
+        height: 6vh;
+        padding: 5px 10px;
+        border: 1px solid #FFFFFF;
+        background-color: #344e41;
+        color: white;
+        cursor: pointer;
+        font-size: 3vh;
+    }
+
+    #homeButton {
+        background-color: #A3B18A;
+    }
+
+    .button-icon {
+        width: 1vh;
+        height: 1vh;
+    }
+
+
+    th, td {
+        border: 2px solid white;
+        padding: 2px;
+        text-align: left;
+        overflow: hidden;
+        font-size: 2.8vh;
+        display: table-cell;
+        word-wrap: break-word;
+    }
+
+    th {
+        background-color: #588157;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .song-title {
+        font-weight: bold;
+        font-size: 3.5vh;
+    }
+
+    .song-artist {
+        font-weight: normal;
+        font-size: 2.5vh;
+    }
+}
+
+
 @media (min-width: 768px) {
     .horizontal-banner {
         font-size: calc(1vw + 1vh);
@@ -484,7 +628,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .display-select, .search-select, .search-input {
-        height: 4vh;
+        height: 4.5vh;
         padding: 0 10px;
         border: 2px solid #FFFFFF;
         background-color: #98C1A6;
