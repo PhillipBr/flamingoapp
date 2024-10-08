@@ -381,7 +381,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     th:nth-child(1), td:nth-child(1), /* Position */
     th:nth-child(2), td:nth-child(2), /* Title/Artist */
     th:nth-child(3), td:nth-child(3), /* Release Year */
-    th:nth-child(6), td:nth-child(6) { /* Views */
+    th:nth-child(4), td:nth-child(4) { /* Views */
         display: table-cell;
         font-size: 1.7vh; /* Increase the font size */
     }
@@ -645,7 +645,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         align-items: center;
         padding: 10px;
         justify-content: space-between;
-        height: 6vh;
+        height: 5vh;
 
     }
 
@@ -675,7 +675,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         padding: 2px;
         text-align: left;
         overflow: hidden;
-        font-size: 2.8vh;
+        font-size: 1.5vh;
         display: table-cell;
         word-wrap: break-word;
     }
@@ -692,12 +692,22 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
 
     .song-title {
         font-weight: bold;
-        font-size: 3.5vh;
+        font-size: 2.0vh;
     }
 
     .song-artist {
         font-weight: normal;
-        font-size: 2.5vh;
+        font-size: 1.5vh;
+    }
+
+    .title {
+        font-size: calc(1.3vw + 1.3vh);
+        max-font-size: 28px;
+        min-font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        max-width: calc(100% - 50px);
+        animation: marquee 10s linear infinite;
     }
 }
 
@@ -705,7 +715,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
 @media (min-width: 1024px) { /* Further adjustments for larger desktop screens */
     .horizontal-banner {
         font-size: calc(1vw + 1vh);
-        height: 5vh;
+        height: 4vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -787,7 +797,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         align-items: center;
         padding: 10px;
         justify-content: space-between;
-        height: 6vh;
+        height: 5vh;
 
     }
 
@@ -817,7 +827,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         padding: 2px;
         text-align: left;
         overflow: hidden;
-        font-size: 2.8vh;
+        font-size: 1.5vh;
         display: table-cell;
         word-wrap: break-word;
     }
@@ -834,11 +844,21 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
 
     .song-title {
         font-weight: bold;
-        font-size: 3.5vh;
+        font-size: 2.0vh;
     }
 
     .song-artist {
         font-weight: normal;
-        font-size: 2.5vh;
+        font-size: 1.5vh;
+    }
+
+    .title {
+        font-size: calc(1.3vw + 1.3vh);
+        max-font-size: 28px;
+        min-font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        max-width: calc(100% - 50px);
+        animation: marquee 10s linear infinite;
     }
 }
