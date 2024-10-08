@@ -776,41 +776,9 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .top {
-        width: 95%;
-        margin: 6px auto;
-        padding: 10px;
-        background-color: #b2bdb1;
-        border: 3px solid #344e41;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 26vh;
-    }
-
-    .image {
-        flex-basis: 20vh;  /* Basis for the flex item */
-        flex-grow: 0;      /* No growth beyond initial size */
-        flex-shrink: 0;    /* No shrinkage below initial size */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        margin: 1%;
-        border: 3px solid white;
-        width: 26vh;       /* Width explicitly defined for square appearance */
-        height: 26vh;      /* Height explicitly defined for square appearance */
-    }
-
-    .image img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: cover;  /* Cover fit to maintain aspect ratio without distortion */
-    }
-
-    .top {
         flex-direction: row; /* Ensure side-by-side layout */
         align-items: stretch; /* Align items in a line */
-        height: 28vh; /* Increase height */
+        height: 25vh; /* Increase height */
     }
 
     .image, .text {
@@ -820,8 +788,8 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .image {
-        max-width: 26vh; /* Maintain aspect ratio for images */
-        height: 26vh; /* Maintain aspect ratio */
+        max-width: 23vh; /* Maintain aspect ratio for images */
+        height: 23vh; /* Maintain aspect ratio */
     }
 
     .image img {
@@ -831,85 +799,26 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .text {
-        width: 20vh;  /* Allowing text block to take remaining space */
+        padding: 1%; /* Adjust padding */
         display: flex;
-        height: 23vh;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding: 1%;
-        color: white;
-        font-size: 3vh;
-        background-color: #344e41;
-        border-radius: 5px;
+        height: 21vh; /* Limit the height to match the image */
+        overflow: auto; /* Add scroll on overflow */
     }
 
     .title, .artists, .album {
         white-space: normal; /* Allow text wrapping */
     }
 
-    .dropdown-container {
-        position: relative;
-        z-index: 1050;
-    }
-
-    .dropdown-container input {
-        width: 40vh;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        cursor: pointer;
-        box-sizing: border-box;
-        z-index: 1050;
-    }
-
-    .dropdown-list {
-        position: absolute;
-        font-size: 3vh;
-        color: #1b1f22;
-        width: 100%;
-        max-height: 150px;
-        overflow-y: auto;
-        border: 1px solid #ccc;
-        border-top: none;
-        background-color: #fff;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        display: none;
-        z-index: 1060;
-    }
-
-    .dropdown-list div {
-        padding: 10px;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    .dropdown-list div:hover {
-        background-color: #f1f1f1;
-        z-index: 2;
-    }
-
-
-    .display-select {
-        width: 25vh;
-        height: 3vh;
-        padding: 0 10px;
-        margin: 10px;
-        border: 2px solid #FFFFFF;
-        background-color: #98C1A6;
-        color: #FFFFFF;
-        font-size: 4vh;
-        z-index: 2;
-    }
-
-
-    .search-select, .search-input {
-        height: 6vh;
+    .display-select, .search-select, .search-input {
+        height: 4.5vh;
         padding: 0 10px;
         border: 2px solid #FFFFFF;
         background-color: #98C1A6;
         color: #333;
-        font-size: 4vh;
+        font-size: 2.0vh;
     }
 
     .search_bar {
@@ -921,7 +830,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         align-items: center;
         padding: 10px;
         justify-content: space-between;
-        height: 6vh;
+        height: 5vh;
 
     }
 
@@ -941,8 +850,8 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .button-icon {
-        width: 1.5vh;
-        height: 1.5vh;
+        width: 1vh;
+        height: 1vh;
     }
 
 
@@ -951,7 +860,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         padding: 2px;
         text-align: left;
         overflow: hidden;
-        font-size: 2.8vh;
+        font-size: 1.5vh;
         display: table-cell;
         word-wrap: break-word;
     }
@@ -968,19 +877,30 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
 
     .song-title {
         font-weight: bold;
-        font-size: 3.5vh;
+        font-size: 2.0vh;
     }
 
     .song-artist {
         font-weight: normal;
-        font-size: 2.5vh;
+        font-size: 1.5vh;
+    }
+
+    .title {
+        font-size: calc(1.3vw + 1.3vh);
+        max-font-size: 28px;
+        min-font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        max-width: calc(100% - 50px);
+        animation: marquee 10s linear infinite;
     }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) { /* Further adjustments for larger desktop screens */
     .horizontal-banner {
         font-size: calc(1vw + 1vh);
-        height: 5vh;
+        height: 4vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1008,41 +928,9 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .top {
-        width: 95%;
-        margin: 6px auto;
-        padding: 10px;
-        background-color: #b2bdb1;
-        border: 3px solid #344e41;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 26vh;
-    }
-
-    .image {
-        flex-basis: 20vh;  /* Basis for the flex item */
-        flex-grow: 0;      /* No growth beyond initial size */
-        flex-shrink: 0;    /* No shrinkage below initial size */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        margin: 1%;
-        border: 3px solid white;
-        width: 26vh;       /* Width explicitly defined for square appearance */
-        height: 26vh;      /* Height explicitly defined for square appearance */
-    }
-
-    .image img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: cover;  /* Cover fit to maintain aspect ratio without distortion */
-    }
-
-    .top {
         flex-direction: row; /* Ensure side-by-side layout */
         align-items: stretch; /* Align items in a line */
-        height: 28vh; /* Increase height */
+        height: 25vh; /* Increase height */
     }
 
     .image, .text {
@@ -1052,8 +940,8 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .image {
-        max-width: 26vh; /* Maintain aspect ratio for images */
-        height: 26vh; /* Maintain aspect ratio */
+        max-width: 23vh; /* Maintain aspect ratio for images */
+        height: 23vh; /* Maintain aspect ratio */
     }
 
     .image img {
@@ -1063,85 +951,26 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .text {
-        width: 20vh;  /* Allowing text block to take remaining space */
+        padding: 1%; /* Adjust padding */
         display: flex;
-        height: 23vh;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding: 1%;
-        color: white;
-        font-size: 3vh;
-        background-color: #344e41;
-        border-radius: 5px;
+        height: 21vh; /* Limit the height to match the image */
+        overflow: auto; /* Add scroll on overflow */
     }
 
     .title, .artists, .album {
         white-space: normal; /* Allow text wrapping */
     }
 
-    .dropdown-container {
-        position: relative;
-        z-index: 1050;
-    }
-
-    .dropdown-container input {
-        width: 40vh;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        cursor: pointer;
-        box-sizing: border-box;
-        z-index: 1050;
-    }
-
-    .dropdown-list {
-        position: absolute;
-        font-size: 3vh;
-        color: #1b1f22;
-        width: 100%;
-        max-height: 150px;
-        overflow-y: auto;
-        border: 1px solid #ccc;
-        border-top: none;
-        background-color: #fff;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        display: none;
-        z-index: 1060;
-    }
-
-    .dropdown-list div {
-        padding: 10px;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    .dropdown-list div:hover {
-        background-color: #f1f1f1;
-        z-index: 2;
-    }
-
-
-    .display-select {
-        width: 25vh;
-        height: 3vh;
-        padding: 0 10px;
-        margin: 10px;
-        border: 2px solid #FFFFFF;
-        background-color: #98C1A6;
-        color: #FFFFFF;
-        font-size: 4vh;
-        z-index: 2;
-    }
-
-
-    .search-select, .search-input {
-        height: 6vh;
+    .display-select, .search-select, .search-input {
+        height: 4vh;
         padding: 0 10px;
         border: 2px solid #FFFFFF;
         background-color: #98C1A6;
         color: #333;
-        font-size: 4vh;
+        font-size: 2.0vh;
     }
 
     .search_bar {
@@ -1153,7 +982,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         align-items: center;
         padding: 10px;
         justify-content: space-between;
-        height: 6vh;
+        height: 5vh;
 
     }
 
@@ -1173,8 +1002,8 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
     }
 
     .button-icon {
-        width: 1.5vh;
-        height: 1.5vh;
+        width: 1vh;
+        height: 1vh;
     }
 
 
@@ -1183,7 +1012,7 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
         padding: 2px;
         text-align: left;
         overflow: hidden;
-        font-size: 2.8vh;
+        font-size: 1.5vh;
         display: table-cell;
         word-wrap: break-word;
     }
@@ -1200,11 +1029,21 @@ th:nth-child(7), td:nth-child(7) { width: 15%; }
 
     .song-title {
         font-weight: bold;
-        font-size: 3.5vh;
+        font-size: 2.0vh;
     }
 
     .song-artist {
         font-weight: normal;
-        font-size: 2.5vh;
+        font-size: 1.5vh;
+    }
+
+    .title {
+        font-size: calc(1.3vw + 1.3vh);
+        max-font-size: 28px;
+        min-font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        max-width: calc(100% - 50px);
+        animation: marquee 10s linear infinite;
     }
 }
