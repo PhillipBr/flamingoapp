@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>FlamingoApp</title>
+
+<link rel="icon" href="/images/ico.ico" type="image/x-icon">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div class="horizontal-banner">
+    <a href="index.html" class="banner-segment" id="home">
+        <img src="https://img.icons8.com/?size=100&id=8PnfstkKqW5t&format=png&color=000000" alt="YouTube Logo">
+    </a>
+    <a href="sp_g.html" class="banner-segment" id="spotify_trends">
+        <img src="https://img.icons8.com/?size=100&id=G9XXzb9XaEKX&format=png&color=000000" alt="Spotify Logo">
+    </a>
+    <a href="home.html" class="banner-segment" id="segment3">
+        <img src="images/logoo.jpg" alt="Flamingo Logo" id="bannerLogo">
+    </a>
+    <a href="charts.html" class="banner-segment" id="charts">CHARTS</a>
+    <a href="https://phillipbr.github.io" class="banner-segment" id="about_me" target="_blank">ABOUT ME</a>
+</div>
+
+
+
+<div class="container">
+    <div class="top">
+        <div class="image">
+            <img src="images/flamingo%20logo.webp" id="topImage" src="" alt="Album Cover">
+        </div>
+        <div class="text">
+            <div id="topTitle" class="title">Title</div>
+            <div id="topArtist" class="artists">Artist</div>
+            <div id="topAlbum" class="album">Album</div>
+            <div class="icons">
+                <a href="https://www.youtube.com" target="_blank" id="youtubeLink">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube">
+                </a>
+
+                <select id="displayselext" class="display-select">
+                    <option value="200" selected>200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="All">All</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="search_bar">
+        <select id="searchCategory" class="search-select">
+            <option value="Title">Title</option>
+            <option value="Artist">Artist</option>
+            <option value="Album">Album</option>
+            <option value="Genre">Genre</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Enter search text..." class="search-input">
+        <button id="searchButton" aria-label="Search">🔍</button>
+        <button id="homeButton" aria-label="Home">🏠</button>
+    </div>
+
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Views</th>
+                <th>Duration</th>
+                <th>Release</th>
+                <th>Genre</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be inserted here by scriptname.js -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="scriptname.js"></script>
+</body>
+</html>
