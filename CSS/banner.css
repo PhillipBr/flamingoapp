@@ -1,0 +1,88 @@
+.blackbanner1 {
+    box-sizing: border-box;
+    font-size: calc(0.7vw + 0.7vh);
+    height: 5vh;
+    text-align: center;
+    background-color: black;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner_content {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 5%;
+    margin-top: 3px;
+    animation: scrollText 300s linear infinite; /* Adjust speed here */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+#banner_content a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#banner_content a:visited {
+    color: inherit;
+}
+
+#banner_content a:hover {
+    color: inherit;
+}
+
+#banner_content a:active {
+    color: inherit;
+}
+
+.spotify {
+    color: #1DB954;
+}
+
+.youtube {
+    color: #FF0000;
+}
+
+.youtube_insights {
+    color: #FF0000;
+}
+
+.itunes {
+    color: #fb5068;
+}
+
+.apple_music {
+    color: #A2AAAD;
+}
+
+.deezer {
+    color: #a238ff;
+}
+
+.shazam {
+    color: #0088FF;
+}
+
+.position {
+    color: yellow;
+}
+
+.country {
+    color: yellow;
+}
+
+.separator {
+    color: #808080;
+}

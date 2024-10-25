@@ -1,0 +1,196 @@
+/* Base Styles */
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Horizontal Banner */
+.horizontal-banner {
+    font-size: calc(1vw + 1vh);
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #344e41;
+    border-bottom: 5px solid white;
+}
+
+.banner-segment {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #588157;
+    color: white;
+    padding: 0 1%;
+    font-size: calc(0.8vh + 0.8vw);
+    cursor: pointer;
+    border-right: 1px solid #FFFFFF;
+}
+
+.banner-segment:hover {
+    background-color: #98C1A6;
+    color: #344e41;
+}
+
+#segment3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-segment img {
+    height: 80%;
+    vertical-align: middle;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+#bannerLogo {
+    width: 3vw;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+#segment3:hover #bannerLogo {
+    transform: scale(1.1);
+    border-color: #98C1A6;
+}
+
+/* Tabs */
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #001f54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #588157;
+}
+
+.tab-btn.active {
+    background-color: #000000; /* Active tab color */
+}
+
+/* Chart Container */
+.charts-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    background-color: #344e41;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Table Styling */
+.trends-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.trends-table th, .trends-table td {
+    padding: 5px; /* Increased padding for larger text */
+    color: white;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1.2em; /* Increased data font size */
+}
+
+/* Title Styling */
+.trends-table .table-header th {
+    font-size: 1.6em; /* Double size for table title */
+    color: white;
+    padding: 20px 0;
+    background-color: inherit;
+
+
+}
+
+/* Row Colors Based on Platform */
+.itunes-table tr:nth-child(even) {
+    background-color: #fb5068;
+}
+
+.apple-music-table tr:nth-child(even) {
+    background-color: #A2AAAD;
+}
+
+.deezer-table tr:nth-child(even) {
+    background-color: #a238ff;
+}
+
+.shazam-table tr:nth-child(even) {
+    background-color: #0088FF;
+}
+
+.billboard-table tr:nth-child(even) {
+    background-color: #000000;
+}
+
+.trends-table tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+/* Platform Icons */
+.platform-icon {
+    width: 50px;
+    height: 50px; /* Double size for icons */
+    vertical-align: middle;
+    margin: 15px;
+}
+
+/* Set specific column widths */
+.trends-table td:nth-child(1),
+.trends-table th:nth-child(1) {
+    width: 5%;
+}
+
+.trends-table td:nth-child(2),
+.trends-table th:nth-child(2) {
+    width: 95%;
+}
+
+/* Date Display */
+.table-header-date {
+    float: right;
+    font-size: 0.8em; /* Date font size */
+    color: white;
+    margin-top: 6px;
+    margin-right: 15px;
+    padding: 20px 0;
+    background-color: inherit;
+
+}
