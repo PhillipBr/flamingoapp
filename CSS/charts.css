@@ -1,0 +1,275 @@
+/* Base Styles */
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Horizontal Banner */
+
+.horizontal-banner {
+    font-size: calc(1vw + 1vh);
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #344e41;
+    border-bottom: 5px solid white;
+}
+
+.banner-segment {
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #588157;
+    color: white;
+    padding: 0 1%;
+    font-size: calc(0.8vh + 0.8vw);
+    cursor: pointer;
+    border-right: 1px solid #FFFFFF;
+}
+
+.banner-segment:last-child {
+    border-right: none;
+}
+
+.banner-segment:hover {
+    background-color: #98C1A6;
+    color: #344e41;
+}
+
+#segment3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-segment img {
+    width: 8vw;
+    height: auto;
+}
+
+#bannerLogo {
+    width: 3vw;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+#segment3:hover #bannerLogo {
+    transform: scale(1.1);
+    border-color: #98C1A6;
+}
+
+/* Tabs */
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #001f54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #588157;
+}
+
+.tab-btn.active {
+    background-color: #000000;
+}
+
+/* Chart Container */
+.charts-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    background-color: #344e41;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Table Styling */
+.trends-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.trends-table th, .trends-table td {
+    padding: 5px;
+    color: white;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+/* Title Styling */
+.trends-table .table-header th {
+    font-size: 1.6em;
+    color: white;
+    padding: 20px 0;
+    background-color: inherit;
+}
+
+/* Row Colors Based on Platform */
+.itunes-table tr:nth-child(even) {
+    background-color: #fb5068;
+}
+
+.apple-music-table tr:nth-child(even) {
+    background-color: #A2AAAD;
+}
+
+.deezer-table tr:nth-child(even) {
+    background-color: #a238ff;
+}
+
+.shazam-table tr:nth-child(even) {
+    background-color: #0088FF;
+}
+
+.billboard-table tr:nth-child(even) {
+    background-color: #000000;
+}
+
+.trends-table tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+/* Platform Icons */
+.platform-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+/* Set specific column widths */
+.trends-table td:nth-child(1),
+.trends-table th:nth-child(1) {
+    width: 5%;
+}
+
+.trends-table td:nth-child(2),
+.trends-table th:nth-child(2) {
+    width: 95%;
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 600px) {
+    .horizontal-banner {
+        height: 6vh;
+        width: 100%;
+    }
+
+    #bannerLogo {
+        width: 6vw;
+        border: 6px solid white;
+    }
+
+    .charts-container {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .tab-content {
+        width: 90%;
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+
+    .tab-btn {
+        padding: 8px;
+        font-size: 0.6rem;
+        width: 75%;
+    }
+
+    .tab-content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .trends-table {
+        table-layout: auto; /* Ensures fixed width columns */
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .trends-table th, .trends-table td {
+        font-size: 0.8rem;
+        padding: 5px;
+        white-space: nowrap; /* Prevents text from wrapping */
+        overflow: hidden; /* Hides overflow */
+        text-overflow: ellipsis; /* Adds ellipsis (...) to long content */
+    }
+
+    .trends-table th {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .platform-icon {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .charts-container, .tab-content {
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Set fixed column widths */
+    .trends-table th:nth-child(1),
+    .trends-table td:nth-child(1) {
+        width: 5%; /* Set 5% for the Position column */
+    }
+
+    .trends-table th:nth-child(2),
+    .trends-table td:nth-child(2) {
+        width: 95%; /* Set 95% for the Title - Artist column */
+    }
+
+    .trends-table th, .trends-table td {
+        word-wrap: break-word;
+    }
+
+    .trends-table td {
+        white-space: nowrap; /* Prevents wrapping of text in cells */
+        text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
+    }
+}
+
+
+
