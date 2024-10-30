@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import json
 import os
 
-# Define the structure to store the tracks from different platforms
 daily_tracks = {
     "Spotify": {},
     "YouTube": {"global": [], "trends": []},
@@ -15,11 +14,9 @@ daily_tracks = {
     "Billboard": []
 }
 
-# Directory where JSON files will be saved
 DATABASE_DIR = "DATABASES"
 os.makedirs(DATABASE_DIR, exist_ok=True)
 
-# Function to fetch YouTube data
 def get_top_youtube_videos():
     url = 'https://kworb.net/youtube/'
     response = requests.get(url)
@@ -31,7 +28,6 @@ def get_top_youtube_videos():
 
     table = soup.find('table', {'id': 'youtuberealtime'})
     rows = table.find_all('tr') if table else []
-
     videos = []
 
     for row in rows[:51]:
@@ -56,7 +52,6 @@ def get_top_youtube_videos():
 
     daily_tracks["YouTube"]["global"] = videos
 
-# Function to fetch Billboard data
 def get_top_billboard_tracks():
     url = 'https://www.billboard.com/charts/hot-100/'
     response = requests.get(url)
@@ -84,7 +79,6 @@ def get_top_billboard_tracks():
 
     daily_tracks["Billboard"] = billboard_tracks
 
-# General function to fetch data from iTunes, Apple Music, Shazam, and Deezer
 def fetch_data(platform, url):
     response = requests.get(url)
     if response.status_code != 200:
@@ -100,10 +94,8 @@ def fetch_data(platform, url):
         if len(columns) >= 3:
             position = columns[0].text.strip()
             title_artist = columns[2].text.strip()
-
-            # Swapping Title and Artist as requested
             if ' - ' in title_artist:
-                artist, title = title_artist.split(' - ', 1)  # Swap title and artist
+                artist, title = title_artist.split(' - ', 1)
             else:
                 title, artist = title_artist, "Unknown Artist"
 
@@ -115,7 +107,6 @@ def fetch_data(platform, url):
 
     daily_tracks[platform] = data
 
-# Function to fetch Spotify data
 def get_top_spotify_tracks(url, country_code):
     response = requests.get(url)
     if response.status_code != 200:
@@ -146,7 +137,6 @@ def get_top_spotify_tracks(url, country_code):
 
     daily_tracks["Spotify"][country_code] = tracks
 
-# Function to fetch YouTube Insights data
 def get_youtube_insights(country_code):
     url = f'https://kworb.net/youtube/insights/{country_code}_daily.html'
     response = requests.get(url)
@@ -170,7 +160,6 @@ def get_youtube_insights(country_code):
     daily_tracks["YouTube Insights"][country_code] = insights
 
 if __name__ == "__main__":
-    # Spotify data for various countries
     spotify_urls = {
         'global': 'https://kworb.net/spotify/country/global_daily.html',
         'us': 'https://kworb.net/spotify/country/us_daily.html',
@@ -185,14 +174,11 @@ if __name__ == "__main__":
 
     get_top_youtube_videos()
     get_top_billboard_tracks()
-
-    # Fetch data from other platforms
     fetch_data("iTunes", "https://kworb.net/charts/itunes/")
     fetch_data("Apple Music", "https://kworb.net/charts/apple_s/")
     fetch_data("Shazam", "https://kworb.net/charts/shazam/")
     fetch_data("Deezer", "https://kworb.net/charts/deezer/")
 
-    # Save daily_banner.json and daily_table.json to the DATABASES folder
     banner_path = os.path.join(DATABASE_DIR, "daily_banner.json")
     table_path = os.path.join(DATABASE_DIR, "daily_table.json")
 
