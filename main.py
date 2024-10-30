@@ -84,7 +84,7 @@ def get_top_billboard_tracks():
 
     daily_tracks["Billboard"] = billboard_tracks
 
-# General function to fetch data from other platforms
+# General function to fetch data from iTunes, Apple Music, Shazam, and Deezer
 def fetch_data(platform, url):
     response = requests.get(url)
     if response.status_code != 200:
@@ -100,10 +100,13 @@ def fetch_data(platform, url):
         if len(columns) >= 3:
             position = columns[0].text.strip()
             title_artist = columns[2].text.strip()
+
+            # Swapping Title and Artist as requested
             if ' - ' in title_artist:
-                title, artist = title_artist.split(' - ', 1)
+                artist, title = title_artist.split(' - ', 1)  # Swap title and artist
             else:
                 title, artist = title_artist, "Unknown Artist"
+
             data.append({
                 "Position": position,
                 "Title": title,
