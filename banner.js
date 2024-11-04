@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch and display the data
-    fetch('DATABASES/daily_tracks.json')
+    fetch('DATABASES/daily_banner.json')
         .then(response => response.json())
         .then(data => {
             displayNextSet(data, scrollPosition);
