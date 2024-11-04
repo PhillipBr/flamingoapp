@@ -1,0 +1,2690 @@
+{
+    "Spotify": {
+        "global": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "4",
+                "Title": "Who",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU"
+            },
+            {
+                "Position": "5",
+                "Title": "Tu Boda",
+                "Artist": "Oscar Maydon",
+                "spotify_url": "https://open.spotify.com/track/1cOboCuWYI2osTOfolMRS6"
+            }
+        ],
+        "us": [
+            {
+                "Position": "1",
+                "Title": "St. Chroma",
+                "Artist": "Tyler, The Creator",
+                "spotify_url": "https://open.spotify.com/track/1QoyuMHNBe7lg3YW4Qtll4"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "4",
+                "Title": "Darling, I",
+                "Artist": "Tyler, The Creator",
+                "spotify_url": "https://open.spotify.com/track/0VaeksJaXy5R1nvcTMh3Xk"
+            },
+            {
+                "Position": "5",
+                "Title": "Rah Tah Tah",
+                "Artist": "Tyler, The Creator",
+                "spotify_url": "https://open.spotify.com/track/5RePVWy39tLpHH0WwXgBsK"
+            }
+        ],
+        "gb": [
+            {
+                "Position": "1",
+                "Title": "Sailor Song",
+                "Artist": "Gigi Perez",
+                "spotify_url": "https://open.spotify.com/track/2262bWmqomIaJXwCRHr13j"
+            },
+            {
+                "Position": "2",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter",
+                "spotify_url": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q"
+            },
+            {
+                "Position": "3",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams",
+                "spotify_url": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad"
+            },
+            {
+                "Position": "4",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "5",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "3",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey",
+                "spotify_url": "https://open.spotify.com/track/5fZJQrFKWQLb7FpJXZ1g7K"
+            },
+            {
+                "Position": "4",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams",
+                "spotify_url": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad"
+            },
+            {
+                "Position": "5",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "Barbie",
+                "Artist": "MC Tuto",
+                "spotify_url": "https://open.spotify.com/track/6s1kzj4EbhFLXbuAGJbhbn"
+            },
+            {
+                "Position": "2",
+                "Title": "Última Saudade - Ao Vivo",
+                "Artist": "Henrique & Juliano",
+                "spotify_url": "https://open.spotify.com/track/1wubETHu3SeJHfbz9itEH0"
+            },
+            {
+                "Position": "3",
+                "Title": "Coração Partido (Corazón Partío) - Ao Vivo",
+                "Artist": "Grupo Menos É Mais",
+                "spotify_url": "https://open.spotify.com/track/1YlfGwNizEKy299l1PVggn"
+            },
+            {
+                "Position": "4",
+                "Title": "A Danada Me Ligando",
+                "Artist": "MC Cebezinho",
+                "spotify_url": "https://open.spotify.com/track/3H7eBmcTJyuEMStfmKuLmG"
+            },
+            {
+                "Position": "5",
+                "Title": "São Paulo",
+                "Artist": "The Weeknd",
+                "spotify_url": "https://open.spotify.com/track/0xGQTpN4ESETtl1Sp6rzd2"
+            }
+        ],
+        "in": [
+            {
+                "Position": "1",
+                "Title": "Jo Tum Mere Ho",
+                "Artist": "Anuv Jain",
+                "spotify_url": "https://open.spotify.com/track/0eCajpR75pDW0r64U6hP2x"
+            },
+            {
+                "Position": "2",
+                "Title": "Aaj Ki Raat (From \"Stree 2\")",
+                "Artist": "Sachin-Jigar",
+                "spotify_url": "https://open.spotify.com/track/5AnWrUzsrFgBvhn6dUElnr"
+            },
+            {
+                "Position": "3",
+                "Title": "Ishq",
+                "Artist": "Faheem Abdullah",
+                "spotify_url": "https://open.spotify.com/track/1hlbywc8Jhl1FFqJxAMabE"
+            },
+            {
+                "Position": "4",
+                "Title": "Chuttamalle (From \"Devara Part 1\")",
+                "Artist": "Shilpa Rao",
+                "spotify_url": "https://open.spotify.com/track/1bxzr3JK05fMTcweGAZUHp"
+            },
+            {
+                "Position": "5",
+                "Title": "Raanjhan (From \"Do Patti\")",
+                "Artist": "Sachet-Parampara",
+                "spotify_url": "https://open.spotify.com/track/4vHRQnzGcKEtqsLH70tAms"
+            }
+        ],
+        "ar": [
+            {
+                "Position": "1",
+                "Title": "Nueva Era",
+                "Artist": "Duki",
+                "spotify_url": "https://open.spotify.com/track/03IpZ9yqJlo3EIgDQUgBSF"
+            },
+            {
+                "Position": "2",
+                "Title": "Alegría",
+                "Artist": "Tiago PZK",
+                "spotify_url": "https://open.spotify.com/track/0c82YIGpQ5dCaXpTNCk4sb"
+            },
+            {
+                "Position": "3",
+                "Title": "Amor de Vago",
+                "Artist": "La T y La M",
+                "spotify_url": "https://open.spotify.com/track/5MKbWaXeSQSmzmo7gPQha1"
+            },
+            {
+                "Position": "4",
+                "Title": "noviogangsta <3",
+                "Artist": "Emilia",
+                "spotify_url": "https://open.spotify.com/track/7yrTny7FLWLbfIzsxoicWj"
+            },
+            {
+                "Position": "5",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G",
+                "spotify_url": "https://open.spotify.com/track/6WatFBLVB0x077xWeoVc2k"
+            }
+        ],
+        "co": [
+            {
+                "Position": "1",
+                "Title": "Soltera - W Sound 01",
+                "Artist": "W Sound",
+                "spotify_url": "https://open.spotify.com/track/13BDiikG6y5o5cQTK0HpW6"
+            },
+            {
+                "Position": "2",
+                "Title": "Mirame",
+                "Artist": "Blessd",
+                "spotify_url": "https://open.spotify.com/track/2btNsI4OvcVl7SAHQQDHFB"
+            },
+            {
+                "Position": "3",
+                "Title": "POLOS OPUESTOS REMIX - BLESSD VERSION",
+                "Artist": "Blessd",
+                "spotify_url": "https://open.spotify.com/track/2ALQyXMC26Vew7JX7ert9M"
+            },
+            {
+                "Position": "4",
+                "Title": "UWAIE",
+                "Artist": "Kapo",
+                "spotify_url": "https://open.spotify.com/track/5QjmUqgpPQgXgg4606DqZF"
+            },
+            {
+                "Position": "5",
+                "Title": "Las Piponas (Remix)",
+                "Artist": "Kris R.",
+                "spotify_url": "https://open.spotify.com/track/281YJmnThveWjsWVic9Ym6"
+            }
+        ],
+        "cl": [
+            {
+                "Position": "1",
+                "Title": "A200",
+                "Artist": "King Savagge",
+                "spotify_url": "https://open.spotify.com/track/6hLsMjw00j3HGrkUjKwmgo"
+            },
+            {
+                "Position": "2",
+                "Title": "Después De La 1",
+                "Artist": "Cris Mj",
+                "spotify_url": "https://open.spotify.com/track/6PhRhocBXP4y7NpciGmzra"
+            },
+            {
+                "Position": "3",
+                "Title": "PELIGROSA",
+                "Artist": "FloyyMenor",
+                "spotify_url": "https://open.spotify.com/track/42wdz3j7gstgUuhoFLCXqd"
+            },
+            {
+                "Position": "4",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G",
+                "spotify_url": "https://open.spotify.com/track/6WatFBLVB0x077xWeoVc2k"
+            },
+            {
+                "Position": "5",
+                "Title": "Who",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU"
+            }
+        ],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "Tu Boda",
+                "Artist": "Oscar Maydon",
+                "spotify_url": "https://open.spotify.com/track/1cOboCuWYI2osTOfolMRS6"
+            },
+            {
+                "Position": "2",
+                "Title": "EL LOKERON",
+                "Artist": "Tito Double P",
+                "spotify_url": "https://open.spotify.com/track/6X6m4xmdFcz31p1h7Qg68c"
+            },
+            {
+                "Position": "3",
+                "Title": "DOS DÍAS",
+                "Artist": "Tito Double P",
+                "spotify_url": "https://open.spotify.com/track/5lKFO0PrOC9jmOlPEdjHsL"
+            },
+            {
+                "Position": "4",
+                "Title": "Presidente",
+                "Artist": "Gabito Ballesteros",
+                "spotify_url": "https://open.spotify.com/track/4OLT65TRsOx3Iv1TlCcQVb"
+            },
+            {
+                "Position": "5",
+                "Title": "ESCAPATE",
+                "Artist": "Tito Double P",
+                "spotify_url": "https://open.spotify.com/track/6HrALJOMsfPCCbUo5cJCON"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "DEGENERE 👑",
+                "Artist": "Myke Towers",
+                "spotify_url": "https://open.spotify.com/track/0qeIFEGRQqHoaJtLCl0U73"
+            },
+            {
+                "Position": "2",
+                "Title": "DURO",
+                "Artist": "Quevedo",
+                "spotify_url": "https://open.spotify.com/track/1kyLInQ2qgYbK4wZxllfV2"
+            },
+            {
+                "Position": "3",
+                "Title": "IA",
+                "Artist": "Clarent",
+                "spotify_url": "https://open.spotify.com/track/7lcbpfihslisNObKdHjyLo"
+            },
+            {
+                "Position": "4",
+                "Title": "Q U E V A S H A C E R H O Y ?",
+                "Artist": "Omar Courtz",
+                "spotify_url": "https://open.spotify.com/track/0Sr7ssScx54yxdM2ols7nW"
+            },
+            {
+                "Position": "5",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G",
+                "spotify_url": "https://open.spotify.com/track/6WatFBLVB0x077xWeoVc2k"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "CARTIER SANTOS",
+                "Artist": "SDM",
+                "spotify_url": "https://open.spotify.com/track/1Mzg6bu3hkCwJKEf7v49MN"
+            },
+            {
+                "Position": "2",
+                "Title": "SOIS PAS TIMIDE",
+                "Artist": "GIMS",
+                "spotify_url": "https://open.spotify.com/track/37tGmKyKlr8vyt9BVdoWQo"
+            },
+            {
+                "Position": "3",
+                "Title": "Sous la lune",
+                "Artist": "Jul",
+                "spotify_url": "https://open.spotify.com/track/6hKkzk8UlVUj9ioPCyeH1O"
+            },
+            {
+                "Position": "4",
+                "Title": "SPIDER",
+                "Artist": "GIMS",
+                "spotify_url": "https://open.spotify.com/track/2fFTn0f94EopgZyfSGQuyK"
+            },
+            {
+                "Position": "5",
+                "Title": "POUR ELLE",
+                "Artist": "SDM",
+                "spotify_url": "https://open.spotify.com/track/5jX61gvbNenSDMldQrbtsU"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "3",
+                "Title": "Sailor Song",
+                "Artist": "Gigi Perez",
+                "spotify_url": "https://open.spotify.com/track/2262bWmqomIaJXwCRHr13j"
+            },
+            {
+                "Position": "4",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone",
+                "spotify_url": "https://open.spotify.com/track/3xkHsmpQCBMytMJNiDf3Ii"
+            },
+            {
+                "Position": "5",
+                "Title": "SOIS PAS TIMIDE",
+                "Artist": "GIMS",
+                "spotify_url": "https://open.spotify.com/track/37tGmKyKlr8vyt9BVdoWQo"
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "MI PIACCIONO LE ARMI",
+                "Artist": "Simba La Rue",
+                "spotify_url": "https://open.spotify.com/track/3yFgWoossjlaJ919XDCG4C"
+            },
+            {
+                "Position": "2",
+                "Title": "Per due come noi",
+                "Artist": "Olly",
+                "spotify_url": "https://open.spotify.com/track/5mKHtB2OGDXzbsInzW7veZ"
+            },
+            {
+                "Position": "3",
+                "Title": "Donna",
+                "Artist": "Kid Yugi",
+                "spotify_url": "https://open.spotify.com/track/5t0pLWfUeP5fYVxKaMB2MD"
+            },
+            {
+                "Position": "4",
+                "Title": "TT LE GIRLZ",
+                "Artist": "ANNA",
+                "spotify_url": "https://open.spotify.com/track/7sj9VfVtmcEZBDbRAsVXWY"
+            },
+            {
+                "Position": "5",
+                "Title": "il filo rosso",
+                "Artist": "Alfa",
+                "spotify_url": "https://open.spotify.com/track/1QcmAp6Ev2HuYxKujUwnw0"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "The Emptiness Machine",
+                "Artist": "Linkin Park",
+                "spotify_url": "https://open.spotify.com/track/2PnlsTsOTLE5jnBnNe2K0A"
+            },
+            {
+                "Position": "2",
+                "Title": "It Girl",
+                "Artist": "Shirin David",
+                "spotify_url": "https://open.spotify.com/track/2byoNXF9Y6qhIGBq33ATEm"
+            },
+            {
+                "Position": "3",
+                "Title": "Bauch Beine Po",
+                "Artist": "Shirin David",
+                "spotify_url": "https://open.spotify.com/track/64f3yNXsi2Vk76odcHCOnw"
+            },
+            {
+                "Position": "4",
+                "Title": "LID",
+                "Artist": "LACAZETTE",
+                "spotify_url": "https://open.spotify.com/track/5U8jvRKKzcc3XjBB2CNZaZ"
+            },
+            {
+                "Position": "5",
+                "Title": "PLAYBOYBUNNIES",
+                "Artist": "Jazeek",
+                "spotify_url": "https://open.spotify.com/track/77p59nG1oU5pzd20rPxBwC"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Damage",
+                "Artist": "Noano",
+                "spotify_url": "https://open.spotify.com/track/1b6G5YNi5akoOpwlqnulH8"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "3",
+                "Title": "Terug In De Tijd",
+                "Artist": "Yves Berendse",
+                "spotify_url": "https://open.spotify.com/track/0vrKBjEBQAVn3sdhIXmpHE"
+            },
+            {
+                "Position": "4",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "5",
+                "Title": "Vaag - REMIX",
+                "Artist": "Hekje31",
+                "spotify_url": "https://open.spotify.com/track/6eldmQ56gAtXN55c7MuH8N"
+            }
+        ],
+        "kr": [
+            {
+                "Position": "1",
+                "Title": "Who",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "4",
+                "Title": "Whiplash",
+                "Artist": "aespa",
+                "spotify_url": "https://open.spotify.com/track/7Cnpb1vBbC46RgVyyKLH7p"
+            },
+            {
+                "Position": "5",
+                "Title": "Be Mine",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/3LWVXp636uLT356Rj08Jaz"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "2",
+                "Title": "Bunny Girl",
+                "Artist": "AKASAKI",
+                "spotify_url": "https://open.spotify.com/track/5skCbGGAnc7Ns18Figz54h"
+            },
+            {
+                "Position": "3",
+                "Title": "ライラック",
+                "Artist": "Mrs. GREEN APPLE",
+                "spotify_url": "https://open.spotify.com/track/78W4mTLIh4qoLu92W4IQhO"
+            },
+            {
+                "Position": "4",
+                "Title": "オトノケ - Otonoke",
+                "Artist": "Creepy Nuts",
+                "spotify_url": "https://open.spotify.com/track/6KYOlIwDHbrbeBbJEtQ0Fj"
+            },
+            {
+                "Position": "5",
+                "Title": "Who",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU"
+            }
+        ],
+        "th": [
+            {
+                "Position": "1",
+                "Title": "Moonlit Floor",
+                "Artist": "LISA",
+                "spotify_url": "https://open.spotify.com/track/3yDRcs0Y4pPzkvMbUfeF9H"
+            },
+            {
+                "Position": "2",
+                "Title": "Who",
+                "Artist": "Jimin",
+                "spotify_url": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU"
+            },
+            {
+                "Position": "3",
+                "Title": "Love Me Again",
+                "Artist": "V",
+                "spotify_url": "https://open.spotify.com/track/2N0SPREDYqILVEFSsWF5N5"
+            },
+            {
+                "Position": "4",
+                "Title": "Standing Next to You",
+                "Artist": "Jung Kook",
+                "spotify_url": "https://open.spotify.com/track/2KslE17cAJNHTsI2MI0jb2"
+            },
+            {
+                "Position": "5",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            }
+        ],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "2",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter",
+                "spotify_url": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "5",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams",
+                "spotify_url": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad"
+            }
+        ],
+        "nz": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga",
+                "spotify_url": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ",
+                "spotify_url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish",
+                "spotify_url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB"
+            },
+            {
+                "Position": "4",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter",
+                "spotify_url": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q"
+            },
+            {
+                "Position": "5",
+                "Title": "Sailor Song",
+                "Artist": "Gigi Perez",
+                "spotify_url": "https://open.spotify.com/track/2262bWmqomIaJXwCRHr13j"
+            }
+        ]
+    },
+    "YouTube": {
+        "global": [
+            {
+                "Position": "1",
+                "Title": "ROSÉ & Bruno Mars - APT. (Official Music Video)",
+                "youtube_url": ""
+            },
+            {
+                "Position": "2",
+                "Title": "BABYMONSTER - 'DRIP' M/V",
+                "youtube_url": ""
+            },
+            {
+                "Position": "3",
+                "Title": "Aaj Ki Raat | Stree 2 | Tamannaah Bhatia | Sachin-Jigar | Madhubanti | Divya | Amitabh",
+                "youtube_url": ""
+            },
+            {
+                "Position": "4",
+                "Title": "Aayi Nai -Stree 2 | Shraddha Kapoor | Rajkummar Rao | Sachin-Jigar |Pawan Singh,Simran,Divya,Amitabh",
+                "youtube_url": ""
+            }
+        ],
+        "trends": [
+            {
+                "Position": "1",
+                "Title": "DUKI, Myke Towers - Nueva Era",
+                "youtube_url": "https://www.youtube.com/watch?v=wgvqiH7iCRo"
+            },
+            {
+                "Position": "2",
+                "Title": "The Weeknd - São Paulo feat. Anitta (Official Music Video)",
+                "youtube_url": "https://www.youtube.com/watch?v=2kjolTLZ_Mg"
+            },
+            {
+                "Position": "3",
+                "Title": "El Alfa \"El Jefe\" x Kim Loaiza - Si, Es Asi | Video Oficial",
+                "youtube_url": "https://www.youtube.com/watch?v=_7ZuqNdDc5Q"
+            },
+            {
+                "Position": "4",
+                "Title": "DUKI, Wiz Khalifa, Arcángel - Wake Up & Bake Up",
+                "youtube_url": "https://www.youtube.com/watch?v=axD49xGzKWY"
+            }
+        ]
+    },
+    "YouTube Insights": {
+        "us": [
+            {
+                "Position": "1",
+                "Title": "Óscar Maydon - Tu Boda"
+            },
+            {
+                "Position": "2",
+                "Title": "KSI - Thick Of It (feat. Trippie Redd)"
+            },
+            {
+                "Position": "3",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "4",
+                "Title": "Teddy Swims - Lose Control (Live)"
+            }
+        ],
+        "uk": [
+            {
+                "Position": "1",
+                "Title": "KSI - Thick Of It (feat. Trippie Redd)"
+            },
+            {
+                "Position": "2",
+                "Title": "Benson Boone - Beautiful Things"
+            },
+            {
+                "Position": "3",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "4",
+                "Title": "Lady Gaga - Die With A Smile"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "Tom MacDonald - Goodbye Joe"
+            },
+            {
+                "Position": "2",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "3",
+                "Title": "Benson Boone - Beautiful Things"
+            },
+            {
+                "Position": "4",
+                "Title": "Shaboozey - A Bar Song (Tipsy)"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "MC Tuto - Barbie"
+            },
+            {
+                "Position": "2",
+                "Title": "MC Cebezinho - A Danada Me Ligando"
+            },
+            {
+                "Position": "3",
+                "Title": "Grupo Menos É Mais - Coração Partido (Corazón Partío) (Ao Vivo)"
+            },
+            {
+                "Position": "4",
+                "Title": "Léo Foguete - Última Noite"
+            }
+        ],
+        "in": [
+            {
+                "Position": "1",
+                "Title": "Madhubanti Bagchi - Aaj Ki Raat"
+            },
+            {
+                "Position": "2",
+                "Title": "BABYMONSTER - DRIP"
+            },
+            {
+                "Position": "3",
+                "Title": "Pawan Singh - Aayi Nai"
+            },
+            {
+                "Position": "4",
+                "Title": "Malaysia Vasudevan - Manasilaayo"
+            }
+        ],
+        "ar": [
+            {
+                "Position": "1",
+                "Title": "Valentino Merlo - Hoy"
+            },
+            {
+                "Position": "2",
+                "Title": "KAROL G - Si Antes Te Hubiera Conocido"
+            },
+            {
+                "Position": "3",
+                "Title": "Big One - Pa´ Que Te Acuerdes | CROSSOVER #8"
+            },
+            {
+                "Position": "4",
+                "Title": "Los Ángeles Azules - Perdonarte, ¿Para Qué?"
+            }
+        ],
+        "co": [
+            {
+                "Position": "1",
+                "Title": "KAROL G - Si Antes Te Hubiera Conocido"
+            },
+            {
+                "Position": "2",
+                "Title": "Blessd - Mírame"
+            },
+            {
+                "Position": "3",
+                "Title": "Jannette Alvar - No Se LLora Por Cabrones"
+            },
+            {
+                "Position": "4",
+                "Title": "Shakira - Soltera"
+            }
+        ],
+        "cl": [
+            {
+                "Position": "1",
+                "Title": "King Savagge - A200"
+            },
+            {
+                "Position": "2",
+                "Title": "KAROL G - Si Antes Te Hubiera Conocido"
+            },
+            {
+                "Position": "3",
+                "Title": "Grupo Zúmbale Primo - Tattoo"
+            },
+            {
+                "Position": "4",
+                "Title": "Cris Mj - SI NO ES CONTIGO"
+            }
+        ],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "Óscar Maydon - Tu Boda"
+            },
+            {
+                "Position": "2",
+                "Title": "Tito Double P - DOS DÍAS"
+            },
+            {
+                "Position": "3",
+                "Title": "Tito Double P - EL LOKERÓN"
+            },
+            {
+                "Position": "4",
+                "Title": "Tito Double P - ESCAPATE"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "KAROL G - Si Antes Te Hubiera Conocido"
+            },
+            {
+                "Position": "2",
+                "Title": "Shakira - Soltera"
+            },
+            {
+                "Position": "3",
+                "Title": "Isabel Aaiún - Potra Salvaje"
+            },
+            {
+                "Position": "4",
+                "Title": "Karina y Marina - Bombon"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "GIMS - SOIS PAS TIMIDE"
+            },
+            {
+                "Position": "2",
+                "Title": "GIMS - SPIDER"
+            },
+            {
+                "Position": "3",
+                "Title": "Guy2Bezbar - Monaco"
+            },
+            {
+                "Position": "4",
+                "Title": "Dr. Yaro - Minimum ça"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "GIMS - SOIS PAS TIMIDE"
+            },
+            {
+                "Position": "2",
+                "Title": "GIMS - SPIDER"
+            },
+            {
+                "Position": "3",
+                "Title": "Guy2Bezbar - Monaco"
+            },
+            {
+                "Position": "4",
+                "Title": "ROSÉ - APT."
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "Sal da Vinci - Rossetto e caffè"
+            },
+            {
+                "Position": "2",
+                "Title": "Olly - Per due come noi"
+            },
+            {
+                "Position": "3",
+                "Title": "Lele Blade - HEETS (feat. Geolier)"
+            },
+            {
+                "Position": "4",
+                "Title": "Alfa - il filo rosso"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "Shirin David - Bauch Beine Po"
+            },
+            {
+                "Position": "2",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "3",
+                "Title": "AYLIVA - Wunder"
+            },
+            {
+                "Position": "4",
+                "Title": "Die Schule der magischen Tiere - Halt, das ist unser Wald"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Bankzitters - Bro Code"
+            },
+            {
+                "Position": "2",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "3",
+                "Title": "Lady Gaga - Die With A Smile"
+            },
+            {
+                "Position": "4",
+                "Title": "Yves Berendse - Terug In De Tijd"
+            }
+        ],
+        "kr": [
+            {
+                "Position": "1",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "2",
+                "Title": "G-DRAGON - POWER"
+            },
+            {
+                "Position": "3",
+                "Title": "aespa - Whiplash"
+            },
+            {
+                "Position": "4",
+                "Title": "BABYMONSTER - DRIP"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "Creepy Nuts - オトノケ"
+            },
+            {
+                "Position": "2",
+                "Title": "Kocchi No Kento - はいよろこんで"
+            },
+            {
+                "Position": "3",
+                "Title": "Mrs.GREEN APPLE - ライラック"
+            },
+            {
+                "Position": "4",
+                "Title": "issey - モエチャッカファイア"
+            }
+        ],
+        "th": [
+            {
+                "Position": "1",
+                "Title": "เล็กสเร็น - ผิดตั้งแต่เริ่ม (ชู้รัก)"
+            },
+            {
+                "Position": "2",
+                "Title": "COCKTAIL - Yours Ever (feat. Q Flure)"
+            },
+            {
+                "Position": "3",
+                "Title": "เอ็กซ์ ศุภกฤต - เขามัทรี"
+            },
+            {
+                "Position": "4",
+                "Title": "ROSÉ - APT."
+            }
+        ],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "2",
+                "Title": "Benson Boone - Beautiful Things"
+            },
+            {
+                "Position": "3",
+                "Title": "Lady Gaga - Die With A Smile"
+            },
+            {
+                "Position": "4",
+                "Title": "KSI - Thick Of It (feat. Trippie Redd)"
+            }
+        ],
+        "nz": [
+            {
+                "Position": "1",
+                "Title": "ROSÉ - APT."
+            },
+            {
+                "Position": "2",
+                "Title": "Lady Gaga - Die With A Smile"
+            },
+            {
+                "Position": "3",
+                "Title": "KSI - Thick Of It (feat. Trippie Redd)"
+            },
+            {
+                "Position": "4",
+                "Title": "Teddy Swims - Lose Control (Live)"
+            }
+        ]
+    },
+    "iTunes": {
+        "us": [
+            {
+                "Position": "1",
+                "Title": "Goodbye Joe",
+                "Artist": "Tom MacDonald & Nova Rockafeller"
+            },
+            {
+                "Position": "2",
+                "Title": "God Bless The U.S.A. (Rock Version)",
+                "Artist": "Lee Greenwood & Drew Jacobs"
+            },
+            {
+                "Position": "3",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "4",
+                "Title": "Pink Pony Club",
+                "Artist": "Chappell Roan"
+            }
+        ],
+        "uk": [
+            {
+                "Position": "1",
+                "Title": "Send Me a Sign",
+                "Artist": "Sam Clegg"
+            },
+            {
+                "Position": "2",
+                "Title": "Filthy Rich",
+                "Artist": "Ella Henderson"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "I Am Not Okay",
+                "Artist": "Jelly Roll"
+            },
+            {
+                "Position": "4",
+                "Title": "Goodbye Joe",
+                "Artist": "Tom MacDonald & Nova Rockafeller"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "Heart of Gold",
+                "Artist": "Shawn Mendes"
+            },
+            {
+                "Position": "2",
+                "Title": "São Paulo",
+                "Artist": "The Weeknd & Anitta"
+            },
+            {
+                "Position": "3",
+                "Title": "Obsession",
+                "Artist": "EXO"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile (Acoustic)",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "in": [
+            {
+                "Position": "1",
+                "Title": "Sai Pallavi's Intro (From \"Amaran\")",
+                "Artist": "G.V. Prakash Kumar"
+            },
+            {
+                "Position": "2",
+                "Title": "Hey Minnale (From \"Amaran\")",
+                "Artist": "Haricharan, Shweta Mohan, G.V. Prakash Kumar & Karthik Netha"
+            },
+            {
+                "Position": "3",
+                "Title": "Saheli",
+                "Artist": "Savi Kahlon & Sultaan"
+            },
+            {
+                "Position": "4",
+                "Title": "Kasturi",
+                "Artist": "Arijit Singh & Kunaal Vermaa"
+            }
+        ],
+        "ar": [],
+        "co": [],
+        "cl": [],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "fantasmas",
+                "Artist": "HUMBE"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "Tu Boda",
+                "Artist": "Óscar Maydon & Fuerza Regida"
+            },
+            {
+                "Position": "4",
+                "Title": "Recuérdame",
+                "Artist": "Carlos Rivera"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "2",
+                "Title": "Nada",
+                "Artist": "Rosa López & Naím Thomas"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "Nightcall",
+                "Artist": "Kavinsky, Angèle & Phoenix"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "4",
+                "Title": "Recommence-moi",
+                "Artist": "SANTA"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "Born With a Broken Heart",
+                "Artist": "Damiano David"
+            },
+            {
+                "Position": "2",
+                "Title": "U-Turn (Lili)",
+                "Artist": "AaRON"
+            },
+            {
+                "Position": "3",
+                "Title": "The Emptiness Machine",
+                "Artist": "LINKIN PARK"
+            },
+            {
+                "Position": "4",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "Amore Disperato",
+                "Artist": "Achille Lauro"
+            },
+            {
+                "Position": "2",
+                "Title": "BUTTALO VIA",
+                "Artist": "Mina"
+            },
+            {
+                "Position": "3",
+                "Title": "Ora che non ho più te",
+                "Artist": "Cesare Cremonini"
+            },
+            {
+                "Position": "4",
+                "Title": "Si mette male",
+                "Artist": "Alessandra Amoroso"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "The Emptiness Machine",
+                "Artist": "LINKIN PARK"
+            },
+            {
+                "Position": "2",
+                "Title": "Bad Dreams",
+                "Artist": "Teddy Swims"
+            },
+            {
+                "Position": "3",
+                "Title": "Forever Young",
+                "Artist": "David Guetta, Alphaville & Ava Max"
+            },
+            {
+                "Position": "4",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Ne Me Quitte Pas",
+                "Artist": "Claude & Hannah Mae"
+            },
+            {
+                "Position": "2",
+                "Title": "Mooi",
+                "Artist": "Claude & Matthijn Buwalda"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "Sailing",
+                "Artist": "BE:FIRST"
+            },
+            {
+                "Position": "2",
+                "Title": "Otonoke",
+                "Artist": "Creepy Nuts"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Fujin",
+                "Artist": "VAUNDY"
+            }
+        ],
+        "th": [],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "3",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "nz": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Bad Dreams",
+                "Artist": "Teddy Swims"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "In Hell I'll Be in Good Company",
+                "Artist": "The Dead South"
+            }
+        ]
+    },
+    "Apple Music": {
+        "us": [
+            {
+                "Position": "1",
+                "Title": "Sticky (feat. GloRilla, Sexyy Red & Lil Wayne)",
+                "Artist": "Tyler, The Creator"
+            },
+            {
+                "Position": "2",
+                "Title": "WHATCHU KNO ABOUT ME",
+                "Artist": "GloRilla & Sexyy Red"
+            },
+            {
+                "Position": "3",
+                "Title": "Love Somebody",
+                "Artist": "Morgan Wallen"
+            },
+            {
+                "Position": "4",
+                "Title": "St. Chroma (feat. Daniel Caesar)",
+                "Artist": "Tyler, The Creator"
+            }
+        ],
+        "uk": [
+            {
+                "Position": "1",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "Love Somebody",
+                "Artist": "Morgan Wallen"
+            },
+            {
+                "Position": "2",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "3",
+                "Title": "I Had Some Help (feat. Morgan Wallen)",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "4",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "São Paulo",
+                "Artist": "The Weeknd & Anitta"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Barbie",
+                "Artist": "MC Tuto & DJ Glenner"
+            }
+        ],
+        "in": [
+            {
+                "Position": "1",
+                "Title": "Jo Tum Mere Ho",
+                "Artist": "Anuv Jain"
+            },
+            {
+                "Position": "2",
+                "Title": "Antidote",
+                "Artist": "Karan Aujla"
+            },
+            {
+                "Position": "3",
+                "Title": "Raanjhan (From \"Do Patti\")",
+                "Artist": "Sachet-Parampara, Parampara Tandon & Kausar Munir"
+            },
+            {
+                "Position": "4",
+                "Title": "Sifar Safar",
+                "Artist": "Karan Aujla"
+            }
+        ],
+        "ar": [
+            {
+                "Position": "1",
+                "Title": "Who",
+                "Artist": "Jimin"
+            },
+            {
+                "Position": "2",
+                "Title": "Nueva Era",
+                "Artist": "Duki & Myke Towers"
+            },
+            {
+                "Position": "3",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "4",
+                "Title": "I'll Be There",
+                "Artist": "JIN"
+            }
+        ],
+        "co": [
+            {
+                "Position": "1",
+                "Title": "POLOS OPUESTOS REMIX (BLESSD VERSION)",
+                "Artist": "Blessd & Kris R."
+            },
+            {
+                "Position": "2",
+                "Title": "Mírame",
+                "Artist": "Blessd & Ovy On the Drums"
+            },
+            {
+                "Position": "3",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "4",
+                "Title": "Soltera (W Sound 01)",
+                "Artist": "W Sound, Blessd & Ovy On the Drums"
+            }
+        ],
+        "cl": [
+            {
+                "Position": "1",
+                "Title": "A200",
+                "Artist": "King Savagge, Jairo Vera & Bayron Fire"
+            },
+            {
+                "Position": "2",
+                "Title": "Después De La 1",
+                "Artist": "Cris Mj & FloyyMenor"
+            },
+            {
+                "Position": "3",
+                "Title": "Q U E V A S H A C E R H O Y ?",
+                "Artist": "Omar Courtz & De La Rose"
+            },
+            {
+                "Position": "4",
+                "Title": "Daytona",
+                "Artist": "Cris Mj"
+            }
+        ],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "Tu Boda",
+                "Artist": "Óscar Maydon & Fuerza Regida"
+            },
+            {
+                "Position": "2",
+                "Title": "EL LOKERÓN",
+                "Artist": "Tito Double P"
+            },
+            {
+                "Position": "3",
+                "Title": "Presidente",
+                "Artist": "Gabito Ballesteros, Natanael Cano, Neton Vega & Luis R Conriquez"
+            },
+            {
+                "Position": "4",
+                "Title": "DOS DÍAS",
+                "Artist": "Tito Double P & Peso Pluma"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "DURO",
+                "Artist": "Quevedo"
+            },
+            {
+                "Position": "2",
+                "Title": "DEGENERE (feat. benny blanco)",
+                "Artist": "Myke Towers"
+            },
+            {
+                "Position": "3",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "4",
+                "Title": "Q U E V A S H A C E R H O Y ?",
+                "Artist": "Omar Courtz & De La Rose"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "CARTIER SANTOS",
+                "Artist": "SDM"
+            },
+            {
+                "Position": "2",
+                "Title": "POUR ELLE",
+                "Artist": "SDM"
+            },
+            {
+                "Position": "3",
+                "Title": "Sous la lune",
+                "Artist": "Jul"
+            },
+            {
+                "Position": "4",
+                "Title": "Collabo",
+                "Artist": "Ninho & Niska"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "CARTIER SANTOS",
+                "Artist": "SDM"
+            },
+            {
+                "Position": "2",
+                "Title": "POUR ELLE",
+                "Artist": "SDM"
+            },
+            {
+                "Position": "3",
+                "Title": "Sous la lune",
+                "Artist": "Jul"
+            },
+            {
+                "Position": "4",
+                "Title": "CHROME",
+                "Artist": "Damso"
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "Per due come noi",
+                "Artist": "Olly, Angelina Mango & JVLI"
+            },
+            {
+                "Position": "2",
+                "Title": "il filo rosso",
+                "Artist": "Alfa"
+            },
+            {
+                "Position": "3",
+                "Title": "HEETS (feat. Geolier)",
+                "Artist": "Lele Blade"
+            },
+            {
+                "Position": "4",
+                "Title": "Ora che non ho più te",
+                "Artist": "Cesare Cremonini"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "The Emptiness Machine",
+                "Artist": "LINKIN PARK"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "Bauch Beine Po",
+                "Artist": "Shirin David"
+            },
+            {
+                "Position": "4",
+                "Title": "It Girl",
+                "Artist": "Shirin David & Sampagne"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "That’s So True",
+                "Artist": "Gracie Abrams"
+            }
+        ],
+        "kr": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "로제 & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Whiplash",
+                "Artist": "aespa"
+            },
+            {
+                "Position": "3",
+                "Title": "POWER",
+                "Artist": "G-DRAGON"
+            },
+            {
+                "Position": "4",
+                "Title": "UP (KARINA Solo)",
+                "Artist": "aespa"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & ブルーノ・マーズ"
+            },
+            {
+                "Position": "2",
+                "Title": "ライラック",
+                "Artist": "Mrs. GREEN APPLE"
+            },
+            {
+                "Position": "3",
+                "Title": "オトノケ - Otonoke",
+                "Artist": "Creepy Nuts"
+            },
+            {
+                "Position": "4",
+                "Title": "NEW LOOK",
+                "Artist": "MISAMO"
+            }
+        ],
+        "th": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Yours Ever (feat. คิว Flure)",
+                "Artist": "Cocktail"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter"
+            },
+            {
+                "Position": "4",
+                "Title": "Espresso",
+                "Artist": "Sabrina Carpenter"
+            }
+        ],
+        "nz": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Taste",
+                "Artist": "Sabrina Carpenter"
+            }
+        ]
+    },
+    "Shazam": {
+        "us": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Timeless",
+                "Artist": "The Weeknd & Playboi Carti"
+            },
+            {
+                "Position": "3",
+                "Title": "Lose Control",
+                "Artist": "Teddy Swims"
+            },
+            {
+                "Position": "4",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            }
+        ],
+        "uk": [
+            {
+                "Position": "1",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "Barbie",
+                "Artist": "MC Tuto & DJ Glenner"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Lose Control",
+                "Artist": "Teddy Swims"
+            }
+        ],
+        "in": [
+            {
+                "Position": "1",
+                "Title": "Beer Song (From \"Diesel\")",
+                "Artist": "Rokesh, Dhibu Ninan Thomas & Gana Guna"
+            },
+            {
+                "Position": "2",
+                "Title": "Lehrein",
+                "Artist": "Amit Trivedi, Anusha Mani, Neuman Pinto & Nikhil D'Souza"
+            },
+            {
+                "Position": "3",
+                "Title": "Jo Tum Mere Ho",
+                "Artist": "Anuv Jain"
+            },
+            {
+                "Position": "4",
+                "Title": "ჩუბინა",
+                "Artist": "Chub1na.Ge"
+            }
+        ],
+        "ar": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "DEGENERE (feat. benny blanco)",
+                "Artist": "Myke Towers"
+            },
+            {
+                "Position": "3",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "4",
+                "Title": "Amor de Vago",
+                "Artist": "La T y la M & Malandro"
+            }
+        ],
+        "co": [
+            {
+                "Position": "1",
+                "Title": "DEGENERE (feat. benny blanco)",
+                "Artist": "Myke Towers"
+            },
+            {
+                "Position": "2",
+                "Title": "Tu Boda",
+                "Artist": "Óscar Maydon & Fuerza Regida"
+            },
+            {
+                "Position": "3",
+                "Title": "POLOS OPUESTOS REMIX (BLESSD VERSION)",
+                "Artist": "Blessd & Kris R."
+            },
+            {
+                "Position": "4",
+                "Title": "Robando",
+                "Artist": "DJ Lalo & Jøtta"
+            }
+        ],
+        "cl": [
+            {
+                "Position": "1",
+                "Title": "A200",
+                "Artist": "King Savagge, Jairo Vera & Bayron Fire"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "Cosa Linda",
+                "Artist": "Lucky Brown"
+            },
+            {
+                "Position": "4",
+                "Title": "LA MAYORÍA DE LAS NENAS LINDAS (feat. napo99 & teekyy)",
+                "Artist": "Piromano El Del Flow Gitano"
+            }
+        ],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "Tu Boda",
+                "Artist": "Óscar Maydon & Fuerza Regida"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "Robando",
+                "Artist": "DJ Lalo & Jøtta"
+            },
+            {
+                "Position": "4",
+                "Title": "Presidente",
+                "Artist": "Gabito Ballesteros, Natanael Cano, Neton Vega & Luis R Conriquez"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "3",
+                "Title": "Qué Pecao",
+                "Artist": "Manuel Turizo & Kapo"
+            },
+            {
+                "Position": "4",
+                "Title": "IA",
+                "Artist": "Clarent"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "Sous la lune",
+                "Artist": "Jul"
+            },
+            {
+                "Position": "2",
+                "Title": "Alibi",
+                "Artist": "Sevdaliza, Pabllo Vittar & Yseult"
+            },
+            {
+                "Position": "3",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "2",
+                "Title": "Sous la lune",
+                "Artist": "Jul"
+            },
+            {
+                "Position": "3",
+                "Title": "Alibi",
+                "Artist": "Sevdaliza, Pabllo Vittar & Yseult"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "Ora che non ho più te",
+                "Artist": "Cesare Cremonini"
+            },
+            {
+                "Position": "2",
+                "Title": "Per due come noi",
+                "Artist": "Olly, Angelina Mango & JVLI"
+            },
+            {
+                "Position": "3",
+                "Title": "il filo rosso",
+                "Artist": "Alfa"
+            },
+            {
+                "Position": "4",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "I Adore You (feat. Daecolm)",
+                "Artist": "HUGEL, Topic & Arash"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "The Emptiness Machine",
+                "Artist": "LINKIN PARK"
+            },
+            {
+                "Position": "4",
+                "Title": "Bad Dreams",
+                "Artist": "Teddy Swims"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "3",
+                "Title": "WE PRAY",
+                "Artist": "Coldplay, Little Simz, Burna Boy, Elyanna & TINI"
+            },
+            {
+                "Position": "4",
+                "Title": "Black Friday (pretty like the sun)",
+                "Artist": "Lost Frequencies & Tom Odell"
+            }
+        ],
+        "kr": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "I Had Some Help (feat. Morgan Wallen)",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "3",
+                "Title": "Whiplash",
+                "Artist": "aespa"
+            },
+            {
+                "Position": "4",
+                "Title": "a sad invitation (Inst.)",
+                "Artist": "YOON JI HWAN"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Fujin",
+                "Artist": "VAUNDY"
+            },
+            {
+                "Position": "3",
+                "Title": "ashita",
+                "Artist": "Emi Noda"
+            },
+            {
+                "Position": "4",
+                "Title": "NEW LOOK",
+                "Artist": "MISAMO"
+            }
+        ],
+        "th": [
+            {
+                "Position": "1",
+                "Title": "I'll Be There",
+                "Artist": "JIN"
+            },
+            {
+                "Position": "2",
+                "Title": "Yours Ever (feat. คิว Flure)",
+                "Artist": "Cocktail"
+            },
+            {
+                "Position": "3",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            }
+        ],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "4",
+                "Title": "Somedays",
+                "Artist": "Sonny Fodera, Jazzy & D.O.D"
+            }
+        ],
+        "nz": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "ROSÉ & Bruno Mars"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga & Bruno Mars"
+            },
+            {
+                "Position": "3",
+                "Title": "BACKBONE",
+                "Artist": "Chase & Status & Stormzy"
+            },
+            {
+                "Position": "4",
+                "Title": "Pretty Slowly",
+                "Artist": "Benson Boone"
+            }
+        ]
+    },
+    "Deezer": {
+        "us": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "I Had Some Help",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            }
+        ],
+        "uk": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            },
+            {
+                "Position": "3",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "4",
+                "Title": "Espresso",
+                "Artist": "Sabrina Carpenter"
+            }
+        ],
+        "ca": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "I Had Some Help",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            }
+        ],
+        "br": [
+            {
+                "Position": "1",
+                "Title": "Coração Partido (Corazón Partío) (Ao Vivo)",
+                "Artist": "Grupo Menos É Mais"
+            },
+            {
+                "Position": "2",
+                "Title": "Xonei",
+                "Artist": "Jorge & Mateus"
+            },
+            {
+                "Position": "3",
+                "Title": "Última Saudade (Ao Vivo)",
+                "Artist": "Henrique & Juliano"
+            },
+            {
+                "Position": "4",
+                "Title": "A Danada Me Ligando",
+                "Artist": "MC Cebezinho"
+            }
+        ],
+        "ar": [
+            {
+                "Position": "1",
+                "Title": "Who (Acoustic Remix)",
+                "Artist": "Jimin"
+            },
+            {
+                "Position": "2",
+                "Title": "I'll Be There",
+                "Artist": "JIN"
+            },
+            {
+                "Position": "3",
+                "Title": "Nueva Era",
+                "Artist": "DUKI"
+            },
+            {
+                "Position": "4",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            }
+        ],
+        "co": [
+            {
+                "Position": "1",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "2",
+                "Title": "Soltera",
+                "Artist": "Shakira"
+            },
+            {
+                "Position": "3",
+                "Title": "UWAIE",
+                "Artist": "Kapo"
+            },
+            {
+                "Position": "4",
+                "Title": "Ohnana",
+                "Artist": "Kapo"
+            }
+        ],
+        "cl": [
+            {
+                "Position": "1",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "2",
+                "Title": "I'll Be There",
+                "Artist": "JIN"
+            },
+            {
+                "Position": "3",
+                "Title": "A200",
+                "Artist": "King Savagge"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            }
+        ],
+        "mx": [
+            {
+                "Position": "1",
+                "Title": "Tu Boda",
+                "Artist": "Óscar Maydon"
+            },
+            {
+                "Position": "2",
+                "Title": "DOS DÍAS",
+                "Artist": "Tito Double P"
+            },
+            {
+                "Position": "3",
+                "Title": "EL LOKERON",
+                "Artist": "Tito Double P"
+            },
+            {
+                "Position": "4",
+                "Title": "Presidente",
+                "Artist": "Gabito Ballesteros"
+            }
+        ],
+        "es": [
+            {
+                "Position": "1",
+                "Title": "Who",
+                "Artist": "Jimin"
+            },
+            {
+                "Position": "2",
+                "Title": "Si Antes Te Hubiera Conocido",
+                "Artist": "KAROL G"
+            },
+            {
+                "Position": "3",
+                "Title": "Soltera",
+                "Artist": "Shakira"
+            },
+            {
+                "Position": "4",
+                "Title": "DURO",
+                "Artist": "Quevedo"
+            }
+        ],
+        "fr": [
+            {
+                "Position": "1",
+                "Title": "SOIS PAS TIMIDE",
+                "Artist": "GIMS"
+            },
+            {
+                "Position": "2",
+                "Title": "CARTIER SANTOS",
+                "Artist": "SDM"
+            },
+            {
+                "Position": "3",
+                "Title": "Sous la lune",
+                "Artist": "Jul"
+            },
+            {
+                "Position": "4",
+                "Title": "Minimum ça",
+                "Artist": "Dr. Yaro"
+            }
+        ],
+        "be": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "Beautiful Things",
+                "Artist": "Benson Boone"
+            },
+            {
+                "Position": "4",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            }
+        ],
+        "it": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "I Had Some Help",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "4",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            }
+        ],
+        "de": [
+            {
+                "Position": "1",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "2",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "3",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            },
+            {
+                "Position": "4",
+                "Title": "The Emptiness Machine",
+                "Artist": "Linkin Park"
+            }
+        ],
+        "nl": [
+            {
+                "Position": "1",
+                "Title": "Die With A Smile",
+                "Artist": "Lady Gaga"
+            },
+            {
+                "Position": "2",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "3",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            },
+            {
+                "Position": "4",
+                "Title": "Lose Control",
+                "Artist": "Teddy Swims"
+            }
+        ],
+        "kr": [
+            {
+                "Position": "1",
+                "Title": "Moments Away",
+                "Artist": "Edward Maya"
+            },
+            {
+                "Position": "2",
+                "Title": "Old Friend",
+                "Artist": "Zaho de Sagazan"
+            },
+            {
+                "Position": "3",
+                "Title": "échec et mat",
+                "Artist": "Miki"
+            },
+            {
+                "Position": "4",
+                "Title": "Rose Épine",
+                "Artist": "Anna Majidson"
+            }
+        ],
+        "jp": [
+            {
+                "Position": "1",
+                "Title": "FRI(END)S",
+                "Artist": "V"
+            },
+            {
+                "Position": "2",
+                "Title": "APT.",
+                "Artist": "Rosé"
+            },
+            {
+                "Position": "3",
+                "Title": "Do Or Die (Afrojack vs. THIRTY SECONDS TO MARS Remix)",
+                "Artist": "Afrojack"
+            },
+            {
+                "Position": "4",
+                "Title": "Love Me Again",
+                "Artist": "V"
+            }
+        ],
+        "th": [
+            {
+                "Position": "1",
+                "Title": "APT.",
+                "Artist": "Rosé"
+            },
+            {
+                "Position": "2",
+                "Title": "Who",
+                "Artist": "Jimin"
+            },
+            {
+                "Position": "3",
+                "Title": "Be Mine (English Version)",
+                "Artist": "Jimin"
+            },
+            {
+                "Position": "4",
+                "Title": "Кайф ты поймала",
+                "Artist": "Konfuz"
+            }
+        ],
+        "au": [
+            {
+                "Position": "1",
+                "Title": "I Had Some Help",
+                "Artist": "Post Malone"
+            },
+            {
+                "Position": "2",
+                "Title": "A Bar Song (Tipsy)",
+                "Artist": "Shaboozey"
+            },
+            {
+                "Position": "3",
+                "Title": "Good Luck, Babe!",
+                "Artist": "Chappell Roan"
+            },
+            {
+                "Position": "4",
+                "Title": "BIRDS OF A FEATHER",
+                "Artist": "Billie Eilish"
+            }
+        ]
+    }
+}
